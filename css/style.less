@@ -1,1 +1,39 @@
+//ПЕРЕМЕННЫЕ
 
+@indent: 27px;
+
+//МИКСИНЫ-КЛАССЫ
+
+.without_indentation() {
+  padding: 0;
+  margin: 0;
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clearfix::before {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+//ГЛОБАЛЬНЫЕ СТИЛИ
+
+@font-face {
+  font-family: TruenoLt;
+  src: url(../fonts/TruenoLt.otf);
+  font-weight: 400;
+}
