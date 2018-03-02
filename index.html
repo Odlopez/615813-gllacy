@@ -29,7 +29,7 @@
         <a class="header__search" href="#">Поиск</a> <!-- Не уверен, должны здесь быть ссылки или кнопки -->
         <a class="header__entry-form" href="#">Вход</a> <!-- Судя по лекции, все таки ссылки -->
         <a class="header__basket" href="#">Корзина</a> <!-- Хотя хочется вставить кнопки -->
-      <p class="timetable">
+      <p class="timetable vcard">
         <span class="timetable__workhours workhours">С 10 до 20, ежедневно</span>
         <span class="timetable__tel tel">8 812 450-25-25</span>
       </p>
@@ -166,8 +166,24 @@
       </section>
 
       <section class="map">
-
+        <img class="map__img" src="img/map.jpg" alt="Карта нашего местоположения">
+        <!-- Тут будет вставлена карта -->
+        <div class="contacts vcard"> <!-- Немножко микроформатов hCard-->
+            <span>Адрес главного офиса</span>
+            <span>и офлайн-магазина:</span>
+            <p class="contacts__adress">
+              <b class="street-address">ул. Большая Конюшенная 19/8,</b>
+              <b class="locality">Санкт-Петербург</b>
+            </p>
+            <span>Для заказов по телефону:</span>
+            <b class="tel">8 812 450-25-25</b>
+            <span class="workhours">(с 10 до 20 ежедневно)</span>
+            <a class="contacts__btn button button_small" href="#">Форма обратной связи</a>
+        </div>
+        <!-- Форму обратной связи сделать тут или выше? -->
       </section>
+
+      
     </main>
   </body>
 </html>
