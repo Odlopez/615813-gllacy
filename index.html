@@ -60,7 +60,7 @@
         <div class="basket-popup"> <!-- Скрытое наполнение корзины -->
           <ul class="basket-popup__list">
             <li class="basket-popup__item">
-              <button class="basket-popup__delete-product">удалить выбранный продукт</button>
+              <button class="basket-popup__delete-product button-close">удалить выбранный продукт</button>
               <p class="basket-popup__product">Пломбир с апельсиновым джемом</p>
               <p class="basket-popup__unit-price">1,5 кг х <span class="basket-popup__price">200 руб.</span></p>
               <p class="basket-popup__cost">300 руб.</p>
@@ -266,5 +266,16 @@
         </li>
       </ul>
     </footer>
+    <!-- FEEDBACK-FORM -->
+    <form class="feedback-form" action="">
+      <p class="feedback-form__title">
+        <b class="feedback-form__subtitle">Мы обязательно вам ответим!</b>
+        <button class="feedback-form__close button-close">Закрыть окно</button>
+      </p>
+      <input class="feedback-form__login input-text" type="text" placeholder="Как вас зовут?">
+      <input class="feedback-form__email input-text" type="email" placeholder="Ваша почта для ответа?">
+      <textarea class="feedback-form__text" name="feedback-form__text" id="" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="feedback-form__submith button button_small" type="submit">Отправить</button>
+    </form>
   </body>
 </html>
