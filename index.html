@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
@@ -14,9 +14,27 @@
         <a class="main-nav__logo">
           <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
         </a>
+        <!-- Выпадающее главное меню -->
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link link" href="#">Каталог</a>
+            <ul class="main-menu">
+              <li class="main-menu__item">
+                <a class="main-menu__link main-menu__title" href="#">Новинки</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link main-menu__title" href="#">Сливочное</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link main-menu__title" href="#">Щербеты</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link main-menu__title" href="#">Фруктовый лед</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link main-menu__title" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link link" href="#">Доставка и оплата</a>
@@ -27,8 +45,30 @@
         </ul>
       </nav>
         <a class="header__search" href="#">Поиск</a> <!-- Не уверен, должны здесь быть ссылки или кнопки -->
+        <form class="search-form" action=""> <!-- Выпадающий поиск -->
+          <input class="search-form__input input-text" type="search" placeholder="Что ищем?">
+        </form>
         <a class="header__entry-form" href="#">Вход</a> <!-- Судя по лекции, все таки ссылки -->
+        <form class="login-form" action=""> <!-- Выпадающее меню входа -->
+          <input class="login-form__email input-text" type="email" placeholder="Электронная почта">
+          <input class="login-form__password input-text" type="password" placeholder="Пароль">
+          <a class="login-form__btn button button_small" href="#">Войти</a>
+          <a class="login-form__restoring link-dark" href="#">Забыли пароль?</a>
+          <a class="login-form__registration link-dark" href="#">Новая регистрация</a>
+        </form>
         <a class="header__basket" href="#">Корзина</a> <!-- Хотя хочется вставить кнопки -->
+        <div class="basket-popup"> <!-- Скрытое наполнение корзины -->
+          <ul class="basket-popup__list">
+            <li class="basket-popup__item">
+              <button class="basket-popup__delete-product">удалить выбранный продукт</button>
+              <p class="basket-popup__product">Пломбир с апельсиновым джемом</p>
+              <p class="basket-popup__unit-price">1,5 кг х <span class="basket-popup__price">200 руб.</span></p>
+              <p class="basket-popup__cost">300 руб.</p>
+            </li>
+          </ul>
+          <p class="basket-popup__amount">Итого: <span class="basket-popup__sum">750 руб.</span></p>
+          <button class="basket-popup__submith button button_small" type="submit">Оформить заказ</button>
+        </div>
       <p class="timetable vcard">
         <span class="timetable__workhours workhours">С 10 до 20, ежедневно</span>
         <span class="timetable__tel tel">8 812 450-25-25</span>
@@ -79,49 +119,49 @@
       </section>
       <!-- HITS -->
       <section class="hits">
-          <h2 class="visuallyhidden">Горячие товары</h2>
-          <ul class="hits__list">
-            <li class="hits__item">
-              <img class="hits__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом">
-              <p class="hits__cost">
-                <b>310 &#8381;</b>
-                <span class="weight-cost">/кг</span>
-              </p>
-              <a class="hits__link link" href="catalog.html">
-                Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой
-              </a>
-            </li>
-            <li class="hits__item">
-              <img class="hits__image" src="img/hit-2.jpg" alt="Сливочно-кофейное">
-              <p class="hits__cost">
-                <b>380 &#8381;</b>
-                <span class="weight-cost">/кг</span>
-              </p>
-              <a class="hits__link link" href="catalog.html">
-                Сливочно-кофейное с&nbsp;кусочками шоколада
-              </a>
-            </li>
-            <li class="hits__item">
-              <img class="hits__image" src="img/hit-3.jpg" alt="Сливочно-клубничное">
-              <p class="hits__cost">
-                <b>355 &#8381;</b>
-                <span class="weight-cost">/кг</span>
-              </p>
-              <a class="hits__link link" href="catalog.html">
-                Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада
-              </a>
-            </li>
-            <li class="hits__item">
-              <img class="hits__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле">
-              <p class="hits__cost">
-                <b>415 &#8381;</b>
-                <span class="weight-cost">/кг</span>
-              </p>
-              <a class="hits__link link" href="catalog.html">
-                Сливочное крем-брюле с&nbsp;карамельной подливкой
-              </a>
-            </li>
-          </ul>
+        <h2 class="visuallyhidden">Горячие товары</h2>
+        <ul class="hits__list">
+          <li class="hits__item">
+            <img class="hits__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом">
+            <p class="hits__cost">
+              <b>310 &#8381;</b>
+              <span class="weight-cost">/кг</span>
+            </p>
+            <a class="hits__link link" href="catalog.html">
+              Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой
+            </a>
+          </li>
+          <li class="hits__item">
+            <img class="hits__image" src="img/hit-2.jpg" alt="Сливочно-кофейное">
+            <p class="hits__cost">
+              <b>380 &#8381;</b>
+              <span class="weight-cost">/кг</span>
+            </p>
+            <a class="hits__link link" href="catalog.html">
+              Сливочно-кофейное с&nbsp;кусочками шоколада
+            </a>
+          </li>
+          <li class="hits__item">
+            <img class="hits__image" src="img/hit-3.jpg" alt="Сливочно-клубничное">
+            <p class="hits__cost">
+              <b>355 &#8381;</b>
+              <span class="weight-cost">/кг</span>
+            </p>
+            <a class="hits__link link" href="catalog.html">
+              Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада
+            </a>
+          </li>
+          <li class="hits__item">
+            <img class="hits__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле">
+            <p class="hits__cost">
+              <b>415 &#8381;</b>
+              <span class="weight-cost">/кг</span>
+            </p>
+            <a class="hits__link link" href="catalog.html">
+              Сливочное крем-брюле с&nbsp;карамельной подливкой
+            </a>
+          </li>
+        </ul>
       </section>
       <!-- SEO -->
       <section class="seo">
@@ -156,16 +196,18 @@
       </article>
       <!-- DISTRIBUTION -->
       <section class="distribution">
+        <h2 class="visuallyhidden">Подписка на наши новости</h2>
         <label class="distribution__info" for="distribution__email"> <!-- Вероятно, такой большой label - это плохо -->
           Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)
         </label>
         <form class="distribution__form" action="#">
-          <input class="distribution__email" type="email" id="distribution__email">
+          <input class="distribution__email input-text" type="email" id="distribution__email" placeholder="Электронная почта">
           <button class="distribution__submith button button_small" type="submit">Отправить</button>
         </form>
       </section>
-
+      <!-- MAP -->
       <section class="map">
+        <h2 class="visuallyhidden">Наше местоположение</h2>
         <img class="map__img" src="img/map.jpg" alt="Карта нашего местоположения">
         <!-- Тут будет вставлена карта -->
         <div class="contacts vcard"> <!-- Немножко микроформатов hCard-->
@@ -183,7 +225,6 @@
         <!-- Форму обратной связи сделать тут или выше? -->
       </section>
     </main>
-
     <!-- FOOTER -->
     <footer class="footer">
       <ul class="social">
@@ -220,7 +261,7 @@
         </li>
         <li class="academy-info__item">
           <p class="academy-info__copyright">
-            Сделано в <a class="academy-info__link link" href="https://htmlacademy.ru/" target="_blank"></a> HTML Academy &copy; 2017
+            Сделано в <a class="academy-info__link link" href="https://htmlacademy.ru/" target="_blank"> HTML Academy</a> &copy; 2017
           </p>
         </li>
       </ul>
