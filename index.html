@@ -8,8 +8,164 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
-    <div class="page-wrapper">
-        <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-    </div>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#">О Компании</a>
+          </li>
+        </ul>
+      </nav>
+        <a class="header__search" href="#">Поиск</a> <!-- Не уверен, должны здесь быть ссылки или кнопки -->
+        <a class="header__entry-form" href="#">Вход</a> <!-- Судя по лекции, все таки ссылки -->
+        <a class="header__basket" href="#">Корзина</a> <!-- Хотя хочется вставить кнопки -->
+      <p class="timetable">
+        <span class="timetable__workhours workhours">С 10 до 20, ежедневно</span>
+        <span class="timetable__tel tel">8 812 450-25-25</span>
+      </p>
+    </header>
+    <!-- MAIN -->
+    <main>
+
+      <h1 class="visuallyhidden">Магазин сладостей Gllacy Shop</h1>
+      <!-- SHOP-WINDOW -->
+      <section class="shop-window">
+        <h2 class="visuallyhidden">Самые вкусные сочетания</h2>
+        <input class="visuallyhidden" type="radio" name="slider" id="slider_1" checked>
+        <input class="visuallyhidden" type="radio" name="slider" id="slider_2">
+        <input class="visuallyhidden" type="radio" name="slider" id="slider_3">
+        <img class="shop-window__image" src="img/ice-creams-1.png" alt="Крем-брюле и пломбир"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
+        <div class="shop-window__content"> <!-- Вероятно, картинка должна быть внутри div'a -->
+          <p class="shop-window__desc">Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</p>
+          <a class="shop-window__link button button_big" href="catalog.html">Давайте оба!</a>
+        </div>
+        <label class="shop-window__slider" for="slider_1">Слайдер витрины</label>
+        <label class="shop-window__slider" for="slider_2">Слайдер витрины</label>
+        <label class="shop-window__slider" for="slider_3">Слайдер витрины</label>
+      </section>
+      <!-- BANNERS -->
+      <section class="banners">
+        <h2 class="visuallyhidden">Самые выгодные предложения</h2>
+        <ul class="banners__list">
+          <li class="banners__item">
+            <div class="banner banner_raspberry">
+              <h3 class="banner__title">Малинка даром!</h3>
+              <p class="banner__info">
+                При покупке 2&nbsp;кг любого фруктового мороженого, добавим в&nbsp;ваш заказ банку малинового варенья бесплатно.
+              </p>
+              <a class="banner__link button button_small" href="catalog.html">Хочу варенье!</a>
+            </div>
+          </li>
+          <li class="banners__item">
+            <div class="banner banner_chocolate">
+              <h3 class="banner__title">Шоколадки даром!</h3>
+              <p class="banner__info">
+                При покупке 2&nbsp;кг пломбира, добавим в&nbsp;ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+              </p>
+              <a class="banner__link button button_small" href="catalog.html">Хочу шоколадки!</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- HITS -->
+      <section class="hits">
+          <h2 class="visuallyhidden">Горячие товары</h2>
+          <ul class="hits__list">
+            <li class="hits__item">
+              <img class="hits__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом">
+              <p class="hits__cost">
+                <b>310 &#8381;</b>
+                <span class="weight-cost">/кг</span>
+              </p>
+              <a class="hits__link link" href="catalog.html">
+                Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой
+              </a>
+            </li>
+            <li class="hits__item">
+              <img class="hits__image" src="img/hit-2.jpg" alt="Сливочно-кофейное">
+              <p class="hits__cost">
+                <b>380 &#8381;</b>
+                <span class="weight-cost">/кг</span>
+              </p>
+              <a class="hits__link link" href="catalog.html">
+                Сливочно-кофейное с&nbsp;кусочками шоколада
+              </a>
+            </li>
+            <li class="hits__item">
+              <img class="hits__image" src="img/hit-3.jpg" alt="Сливочно-клубничное">
+              <p class="hits__cost">
+                <b>355 &#8381;</b>
+                <span class="weight-cost">/кг</span>
+              </p>
+              <a class="hits__link link" href="catalog.html">
+                Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада
+              </a>
+            </li>
+            <li class="hits__item">
+              <img class="hits__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле">
+              <p class="hits__cost">
+                <b>415 &#8381;</b>
+                <span class="weight-cost">/кг</span>
+              </p>
+              <a class="hits__link link" href="catalog.html">
+                Сливочное крем-брюле с&nbsp;карамельной подливкой
+              </a>
+            </li>
+          </ul>
+      </section>
+      <!-- SEO -->
+      <section class="seo">
+        <h2 class="seo__title">Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</h2>
+        <ul class="seo__list">
+          <li class="seo__item">
+            <p class="seo__description seo__description_ice-cream">
+              Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.
+            </p>
+          </li>
+          <li class="seo__item">
+            <p class="seo__description seo__description_farmers">
+              Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li class="seo__item">
+            <p class="seo__description seo__description_milk">
+              Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.
+            </p>
+          </li>
+          <li class="seo__item">
+            <p class="seo__description seo__description_thermopack">
+              Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- BLOG -->
+      <article class="blog">
+        <h2 class="blog__title">Новое в&nbsp;нашем блоге</h2>
+        <a class="blog__link" href="#">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a>
+      </article>
+      <!-- DISTRIBUTION -->
+      <section class="distribution">
+        <label class="distribution__info" for="distribution__email"> <!-- Вероятно, такой большой label - это плохо -->
+          Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)
+        </label>
+        <form class="distribution__form" action="#">
+          <input class="distribution__email" type="email" id="distribution__email">
+          <button class="distribution__submith button button_small" type="submit">Отправить</button>
+        </form>
+      </section>
+
+
+    </main>
   </body>
 </html>
