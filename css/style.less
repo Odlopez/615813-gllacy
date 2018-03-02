@@ -33,20 +33,29 @@
 
 //ГЛОБАЛЬНЫЕ СТИЛИ
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
-  padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #ffffff;
-}
-
-.page-wrapper {
-  max-width: @width;
-  height: 100%;
-  margin: 0 auto;
   background-color: rgb(132, 157, 143);
 }
 
-p {
-  .without_indentation;
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
