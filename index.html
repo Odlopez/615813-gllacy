@@ -23,7 +23,7 @@
                 <a class="main-menu__link main-menu__title" href="#">Новинки</a>
               </li>
               <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Сливочное</a>
+                <a class="main-menu__link" href="catalog.html">Сливочное</a>
               </li>
               <li class="main-menu__item">
                 <a class="main-menu__link" href="#">Щербеты</a>
@@ -45,11 +45,11 @@
         </ul>
       </nav>
         <a class="header__search" href="#">Поиск</a> <!-- Не уверен, должны здесь быть ссылки или кнопки -->
-        <form class="search-form" action=""> <!-- Выпадающий поиск -->
+        <form class="search-form" action="/echo"> <!-- Выпадающий поиск -->
           <input class="search-form__input input-text" type="search" placeholder="Что ищем?">
         </form>
         <a class="header__entry-form" href="#">Вход</a> <!-- Судя по лекции, все таки ссылки -->
-        <form class="login-form" action=""> <!-- Выпадающее меню входа -->
+        <form class="login-form" action="/echo"> <!-- Выпадающее меню входа -->
           <input class="login-form__email input-text" type="email" placeholder="Электронная почта">
           <input class="login-form__password input-text" type="password" placeholder="Пароль">
           <a class="login-form__btn button button_small" href="#">Войти</a>
@@ -84,9 +84,19 @@
         <input class="visuallyhidden" type="radio" name="slider" id="slider_1" checked>  <!-- Для переключения слайдера -->
         <input class="visuallyhidden" type="radio" name="slider" id="slider_2">
         <input class="visuallyhidden" type="radio" name="slider" id="slider_3">
-        <img class="shop-window__image" src="img/ice-creams-1.png" alt="Крем-брюле и пломбир"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
-        <div class="shop-window__content"> <!-- Вероятно, картинка должна быть внутри div'a -->
+        <div class="shop-window__content shop-window__content_first">
+          <img class="shop-window__image" src="img/ice-creams-1.png" alt="Крем-брюле и пломбир"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
           <p class="shop-window__desc">Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</p>
+          <a class="shop-window__link button button_big" href="catalog.html">Давайте оба!</a>
+        </div>
+        <div class="shop-window__content">
+          <img class="shop-window__image" src="img/ice-creams-2.png" alt="Шоколадный пломбир и лимонный сорбет"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
+          <p class="shop-window__desc">Шоколадный пломбир и&nbsp;лимонный сорбет</p>
+          <a class="shop-window__link button button_big" href="catalog.html">Давайте оба!</a>
+        </div>
+        <div class="shop-window__content">
+          <img class="shop-window__image" src="img/ice-creams-3.png" alt="Пломбир с помадкой и клубничный щербет"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
+          <p class="shop-window__desc">Пломбир с&nbsp;помадкой и&nbsp;клубничный щербет</p>
           <a class="shop-window__link button button_big" href="catalog.html">Давайте оба!</a>
         </div>
         <label class="shop-window__slider" for="slider_1">Слайдер витрины</label>
@@ -122,7 +132,7 @@
         <h2 class="visuallyhidden">Горячие товары</h2>
         <ul class="hits__list products">
           <li class="hits__item products__item">
-            <img class="products__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом">
+            <img class="products__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
             <p class="products__cost">
               <b>310 &#8381;</b>
               <span class="weight-cost">/кг</span>
@@ -132,7 +142,7 @@
             </a>
           </li>
           <li class="hits__item products__item">
-            <img class="products__image" src="img/hit-2.jpg" alt="Сливочно-кофейное">
+            <img class="products__image" src="img/hit-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
             <p class="products__cost">
               <b>380 &#8381;</b>
               <span class="weight-cost">/кг</span>
@@ -142,7 +152,7 @@
             </a>
           </li>
           <li class="hits__item  products__item">
-            <img class="products__image" src="img/hit-3.jpg" alt="Сливочно-клубничное">
+            <img class="products__image" src="img/hit-3.jpg" alt="Сливочно-клубничное" width="267" height="267">
             <p class="products__cost">
               <b>355 &#8381;</b>
               <span class="weight-cost">/кг</span>
@@ -152,7 +162,7 @@
             </a>
           </li>
           <li class="hits__item  products__item">
-            <img class="products__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле">
+            <img class="products__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле" width="267" height="267">
             <p class="products__cost">
               <b>415 &#8381;</b>
               <span class="weight-cost">/кг</span>
@@ -256,24 +266,26 @@
       </ul>
       <ul class="academy-info">
         <li class="academy-info__item">
-          <img class="academy-info__logo" src="img/academy-logo.png" alt="Логотип htmlacademy" width="108" height="39">
+          <a class="academy-info__logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="academy-info__logo" src="img/academy-logo.png" alt="Логотип htmlacademy" width="108" height="39">
+          </a>
         </li>
         <li class="academy-info__item">
           <p class="academy-info__copyright">
-            Сделано в <a class="academy-info__link link" href="https://htmlacademy.ru/" target="_blank"> HTML Academy</a> &copy; 2017
+            Сделано в <a class="academy-info__link link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"> HTML Academy</a> &copy; 2017
           </p>
         </li>
       </ul>
     </footer>
     <!-- FEEDBACK-FORM -->
-    <form class="feedback-form" action="">
+    <form class="feedback-form" action="/echo">
       <p class="feedback-form__title">
         <b class="feedback-form__subtitle">Мы обязательно вам ответим!</b>
         <button class="feedback-form__close button-close">Закрыть окно</button>
       </p>
       <input class="feedback-form__login input-text" type="text" placeholder="Как вас зовут?">
       <input class="feedback-form__email input-text" type="email" placeholder="Ваша почта для ответа?">
-      <textarea class="feedback-form__text" name="feedback-form__text" id="" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <textarea class="feedback-form__text" name="feedback-form__text" id="feedback-form__text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
       <button class="feedback-form__submith button button_small" type="submit">Отправить</button>
     </form>
   </body>
