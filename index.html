@@ -44,31 +44,31 @@
           </li>
         </ul>
       </nav>
-        <a class="header__search" href="#">Поиск</a> <!-- Не уверен, должны здесь быть ссылки или кнопки -->
-        <form class="search-form" action="/echo"> <!-- Выпадающий поиск -->
-          <input class="search-form__input input-text" type="search" placeholder="Что ищем?">
-        </form>
-        <a class="header__entry-form" href="#">Вход</a> <!-- Судя по лекции, все таки ссылки -->
-        <form class="login-form" action="/echo"> <!-- Выпадающее меню входа -->
-          <input class="login-form__email input-text" type="email" placeholder="Электронная почта">
-          <input class="login-form__password input-text" type="password" placeholder="Пароль">
-          <a class="login-form__btn button button_small" href="#">Войти</a>
-          <a class="login-form__restoring link-dark" href="#">Забыли пароль?</a>
-          <a class="login-form__registration link-dark" href="#">Новая регистрация</a>
-        </form>
-        <a class="header__basket" href="#">Корзина</a> <!-- Хотя хочется вставить кнопки -->
-        <div class="basket-popup"> <!-- Скрытое наполнение корзины -->
-          <ul class="basket-popup__list">
-            <li class="basket-popup__item">
-              <button class="basket-popup__delete-product button-close">удалить выбранный продукт</button>
-              <p class="basket-popup__product">Пломбир с апельсиновым джемом</p>
-              <p class="basket-popup__unit-price">1,5 кг х <span class="basket-popup__price">200 руб.</span></p>
-              <p class="basket-popup__cost">300 руб.</p>
-            </li>
-          </ul>
-          <p class="basket-popup__amount">Итого: <span class="basket-popup__sum">750 руб.</span></p>
-          <button class="basket-popup__submith button button_small" type="submit">Оформить заказ</button>
-        </div>
+      <a class="header__search" href="#">Поиск</a>
+      <form class="search-form" action="/echo"> <!-- Выпадающий поиск -->
+        <input class="search-form__input input-text" type="search" placeholder="Что ищем?">
+      </form>
+      <a class="header__entry-form" href="#">Вход</a>
+      <form class="login-form" action="/echo"> <!-- Выпадающее меню входа -->
+        <input class="login-form__email input-text" type="email" placeholder="Электронная почта">
+        <input class="login-form__password input-text" type="password" placeholder="Пароль">
+        <a class="login-form__btn button button_small" href="#">Войти</a>
+        <a class="login-form__restoring link-dark" href="#">Забыли пароль?</a>
+        <a class="login-form__registration link-dark" href="#">Новая регистрация</a>
+      </form>
+      <a class="header__basket" href="#">Корзина</a>
+      <div class="basket-popup"> <!-- Скрытое наполнение корзины -->
+        <ul class="basket-popup__list">
+          <li class="basket-popup__item">
+            <button class="basket-popup__delete-product button-close">удалить выбранный продукт</button>
+            <p class="basket-popup__product">Пломбир с апельсиновым джемом</p>
+            <p class="basket-popup__unit-price">1,5 кг х <span class="basket-popup__price">200 руб.</span></p>
+            <p class="basket-popup__cost">300 руб.</p>
+          </li>
+        </ul>
+        <p class="basket-popup__amount">Итого: <span class="basket-popup__sum">750 руб.</span></p>
+        <button class="basket-popup__submith button button_small" type="submit">Оформить заказ</button>
+      </div>
       <p class="timetable vcard">
         <span class="timetable__workhours workhours">С 10 до 20, ежедневно</span>
         <span class="timetable__tel tel">8 812 450-25-25</span>
