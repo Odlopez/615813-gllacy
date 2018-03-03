@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Шрифты, наверное, все-таки лучше подключать из папки fonts, а не с гугловского сайта... -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
@@ -14,10 +14,10 @@
         <a class="main-nav__logo">
           <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
         </a>
-        <!-- Выпадающее главное меню -->
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link link" href="#">Каталог</a>
+            <!-- Выпадающее главное меню -->
             <ul class="main-menu">
               <li class="main-menu__item">
                 <a class="main-menu__link main-menu__title" href="#">Новинки</a>
@@ -81,7 +81,7 @@
       <!-- SHOP-WINDOW -->
       <section class="shop-window">
         <h2 class="visuallyhidden">Самые вкусные сочетания</h2>
-        <input class="visuallyhidden" type="radio" name="slider" id="slider_1" checked>
+        <input class="visuallyhidden" type="radio" name="slider" id="slider_1" checked>  <!-- Для переключения слайдера -->
         <input class="visuallyhidden" type="radio" name="slider" id="slider_2">
         <input class="visuallyhidden" type="radio" name="slider" id="slider_3">
         <img class="shop-window__image" src="img/ice-creams-1.png" alt="Крем-брюле и пломбир"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
@@ -120,44 +120,44 @@
       <!-- HITS -->
       <section class="hits">
         <h2 class="visuallyhidden">Горячие товары</h2>
-        <ul class="hits__list">
-          <li class="hits__item">
-            <img class="hits__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом">
-            <p class="hits__cost">
+        <ul class="hits__list product__list">
+          <li class="hits__item product__item">
+            <img class="product__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом">
+            <p class="product__cost">
               <b>310 &#8381;</b>
               <span class="weight-cost">/кг</span>
             </p>
-            <a class="hits__link link" href="catalog.html">
+            <a class="product__link link" href="catalog.html">
               Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой
             </a>
           </li>
-          <li class="hits__item">
-            <img class="hits__image" src="img/hit-2.jpg" alt="Сливочно-кофейное">
-            <p class="hits__cost">
+          <li class="hits__item product__item">
+            <img class="product__image" src="img/hit-2.jpg" alt="Сливочно-кофейное">
+            <p class="product__cost">
               <b>380 &#8381;</b>
               <span class="weight-cost">/кг</span>
             </p>
-            <a class="hits__link link" href="catalog.html">
+            <a class="product__link link" href="catalog.html">
               Сливочно-кофейное с&nbsp;кусочками шоколада
             </a>
           </li>
-          <li class="hits__item">
-            <img class="hits__image" src="img/hit-3.jpg" alt="Сливочно-клубничное">
-            <p class="hits__cost">
+          <li class="hits__item  product__item">
+            <img class="product__image" src="img/hit-3.jpg" alt="Сливочно-клубничное">
+            <p class="product__cost">
               <b>355 &#8381;</b>
               <span class="weight-cost">/кг</span>
             </p>
-            <a class="hits__link link" href="catalog.html">
+            <a class="product__link link" href="catalog.html">
               Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада
             </a>
           </li>
-          <li class="hits__item">
-            <img class="hits__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле">
-            <p class="hits__cost">
+          <li class="hits__item  product__item">
+            <img class="product__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле">
+            <p class="product__cost">
               <b>415 &#8381;</b>
               <span class="weight-cost">/кг</span>
             </p>
-            <a class="hits__link link" href="catalog.html">
+            <a class="product__link link" href="catalog.html">
               Сливочное крем-брюле с&nbsp;карамельной подливкой
             </a>
           </li>
@@ -222,7 +222,6 @@
             <span class="workhours">(с 10 до 20 ежедневно)</span>
             <a class="contacts__btn button button_small" href="#">Форма обратной связи</a>
         </div>
-        <!-- Форму обратной связи сделать тут или выше? -->
       </section>
     </main>
     <!-- FOOTER -->

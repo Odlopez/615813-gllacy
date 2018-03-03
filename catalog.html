@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Глейси Каталог</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="main-nav">
+      <a class="main-nav__logo">
+        <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link link main-nav__link_actual" href="#">Каталог</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link link" href="#">О Компании</a>
+        </li>
+      </ul>
+    </nav>
+      <a class="header__search" href="#">Поиск</a> <!-- Не уверен, должны здесь быть ссылки или кнопки -->
+      <form class="search-form" action=""> <!-- Выпадающий поиск -->
+        <input class="search-form__input input-text" type="search" placeholder="Что ищем?">
+      </form>
+      <a class="header__entry-form" href="#">Вход</a> <!-- Судя по лекции, все таки ссылки -->
+      <form class="login-form" action=""> <!-- Выпадающее меню входа -->
+        <input class="login-form__email input-text" type="email" placeholder="Электронная почта">
+        <input class="login-form__password input-text" type="password" placeholder="Пароль">
+        <a class="login-form__btn button button_small" href="#">Войти</a>
+        <a class="login-form__restoring link-dark" href="#">Забыли пароль?</a>
+        <a class="login-form__registration link-dark" href="#">Новая регистрация</a>
+      </form>
+      <a class="header__basket" href="#">Корзина</a> <!-- Хотя хочется вставить кнопки -->
+      <div class="basket-popup"> <!-- Скрытое наполнение корзины -->
+        <ul class="basket-popup__list">
+          <li class="basket-popup__item">
+            <button class="basket-popup__delete-product button-close">удалить выбранный продукт</button>
+            <p class="basket-popup__product">Пломбир с апельсиновым джемом</p>
+            <p class="basket-popup__unit-price">1,5 кг х <span class="basket-popup__price">200 руб.</span></p>
+            <p class="basket-popup__cost">300 руб.</p>
+          </li>
+        </ul>
+        <p class="basket-popup__amount">Итого: <span class="basket-popup__sum">750 руб.</span></p>
+        <button class="basket-popup__submith button button_small" type="submit">Оформить заказ</button>
+      </div>
+    <p class="timetable vcard">
+      <span class="timetable__workhours workhours">С 10 до 20, ежедневно</span>
+      <span class="timetable__tel tel">8 812 450-25-25</span>
+    </p>
+  </header>
+  <!-- MAIN -->
+  <main>
+
+    <h1 class="visuallyhidden">Магазин сладостей Gllacy Shop</h1>
+    <!-- BREAD-CRUMBS -->
+    <ul class="bread-crumbs">
+      <li class="bread-crumbs__item">
+        <a class="bread-crumbs__link link" href="index.html">Главная</a>
+      </li>
+      <li class="bread-crumbs__item">
+        <a class="bread-crumbs__link link" href="№">Каталог</a>
+      </li>
+      <li class="bread-crumbs__item">Сливочное</li>
+    </ul>
+    <!-- CATALOG -->
+    <section class="catalog">
+      <h2 class="catalog__title">Сливочное мороженое</h2>
+      <!-- filter -->
+      <div class="filter">
+        <form class="filter__form" action="/echo" method="post" oninput="max.value=rangeMax.value">
+          <!-- выпадающий список -->
+          <label class="filter__label" for="sorting-list">Сортировка:</label>
+          <select class="filter__sorting" name="sorting" id="sorting-list">
+            <option class="filter__sorting-option" value="popularity">по популярности</option>
+            <option class="filter__sorting-option" value="inexpensive-first">сначала недорогие</option>
+            <option class="filter__sorting-option" value="expensive-first">сначала дорогие</option>
+            <option class="filter__sorting-option" value="by-fat">по жирности</option>
+          </select>
+          <!-- ползунок -->
+          <label class="filter__label" for="filter-range">Цена: <output class="range-output__min" name="#">100</output>
+              руб. -
+            <output class="range-output__max" name="max">500</output>
+            руб.
+          </label>
+          <input class="filter__range" type="range" name="rangeMax" id="filter-range" min="0" max="800" step="10" value="500">
+          <!-- радио-поле -->
+          <span class="filter__label">Жирность:</span>
+          <div class="filter-radio-wrap">
+            <input class="visuallyhidden" type="radio" name="fat" id="no-fat">
+            <label class="filter-radio-wrap__label" for="no-fat">0%</label>
+            <input class="visuallyhidden" type="radio" name="fat" id="fat-10" checked>
+            <label class="filter-radio-wrap__label" for="fat-10">до 10%</label>
+            <input class="visuallyhidden" type="radio" name="fat" id="fat-30">
+            <label class="filter-radio-wrap__label" for="fat-30">до 30%</label>
+            <input class="visuallyhidden" type="radio" name="fat" id="fat-max">
+            <label class="filter-radio-wrap__label" for="fat-max">выше 30%</label>
+          </div>
+          <!-- поле с галочками -->
+          <span class="filter__label">Наполнители:</span>
+          <div class="filter-checkbox-wrap">
+            <input class="visuallyhidden" type="checkbox" name="fillers" id="chocolate" checked>
+            <label class="filter-checkbox-wrap__label" for="chocolate">шоколадные</label>
+            <input class="visuallyhidden" type="checkbox" name="fillers" id="sugar" checked>
+            <label class="filter-checkbox-wrap__label" for="sugar">сахарные присыпки</label>
+            <input class="visuallyhidden" type="checkbox" name="fillers" id="fruit">
+            <label class="filter-checkbox-wrap__label" for="fruit">фрукты</label>
+            <input class="visuallyhidden" type="checkbox" name="fillers" id="syrups">
+            <label class="filter-checkbox-wrap__label" for="syrups">сиропы</label>
+            <input class="visuallyhidden" type="checkbox" name="fillers" id="jams">
+            <label class="filter-checkbox-wrap__label" for="jams">джемы</label>
+          </div>
+          <!-- кнопка отправки -->
+          <button class="filter__submith" type="submit">Применить</button>
+        </form>
+      </div>
+      <ul class="product__list">
+        <li class="product__item">
+          <img class="product__image" src="img/hit-1.jpg" alt="Сливочное с апельсиновым джемом">
+          <p class="product__cost">
+            <b>310 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой
+          </a>
+        </li>
+        <li class="product__item">
+          <img class="product__image" src="img/hit-2.jpg" alt="Сливочно-кофейное">
+          <p class="product__cost">
+            <b>380 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочно-кофейное с&nbsp;кусочками шоколада
+          </a>
+        </li>
+        <li class="product__item">
+          <img class="product__image" src="img/hit-3.jpg" alt="Сливочно-клубничное">
+          <p class="product__cost">
+            <b>355 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада
+          </a>
+        </li>
+        <li class="product__item">
+          <img class="product__image" src="img/hit-4.jpg" alt="Сливочное крем-брюле">
+          <p class="product__cost">
+            <b>415 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочное крем-брюле с&nbsp;карамельной подливкой
+          </a>
+        </li>
+        <li class="product__item">
+          <img class="product__image" src="img/hit-5.jpg" alt="Сливочное с брусничным джемом">
+          <p class="product__cost">
+            <b>325 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочное с&nbsp;брусничным джемом
+          </a>
+        </li>
+        <li class="product__item">
+          <img class="product__image" src="img/hit-6.jpg" alt="Сливочно-черничное с черникой">
+          <p class="product__cost">
+            <b>410 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочно-черничное с&nbsp;цельными ягодами черники
+          </a>
+        </li>
+        <li class="product__item">
+          <img class="product__image" src="img/hit-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+          <p class="product__cost">
+            <b>375 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочно-лимонное с&nbsp;карамельной присыпкой
+          </a>
+        </li>
+        <li class="product__item">
+          <img class="product__image" src="img/hit-8.jpg" alt="Сливочное с шоколадной стружкой">
+          <p class="product__cost">
+            <b>320 &#8381;</b>
+            <span class="weight-cost">/кг</span>
+          </p>
+          <a class="product__link link" href="catalog.html">
+            Сливочное с&nbsp;шоколадной стружкой
+          </a>
+        </li>
+      </ul>
+    </section>
+
+</body>
+</html>
