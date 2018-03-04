@@ -1,8 +1,7 @@
-// out: style.css
+// out: ../style.css
 //ПЕРЕМЕННЫЕ
 
 @indent: 27px;
-@width: 1200px;
 
 //МИКСИНЫ-КЛАССЫ
 
@@ -47,6 +46,9 @@ html {
 }
 
 body {
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -62,9 +64,14 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 // IMPORTS
 
 @import "button";
 @import "popup";
 @import "main-nav-link";
 @import "link";
+@import "main-menu";
