@@ -1,0 +1,51 @@
+//out: false
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 9px 2.3% 0;
+  &-bottom-wrapper {
+    flex-basis: 100%;
+    display: flex;
+  }
+  &__search {
+    margin-left: auto;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  &__logo {
+    height: 64px;
+  }
+  &__list {
+    display: flex;
+    .without_indentation;
+  }
+}
+
+.bread-crumbs {
+  order: 1;
+  display: flex;
+  .without_indentation;
+  margin-top: auto;
+}
+
+.timetable {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .without_indentation;
+  margin-left: auto;
+  font-weight: 700;
+  &__workhours {
+    font-size: 0.875em;
+    line-height: 1em;
+  }
+  &__tel {
+    font-size: 1.375em;
+    line-height: 1.5em;
+  }
+}
