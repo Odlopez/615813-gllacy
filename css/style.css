@@ -30,6 +30,7 @@ html {
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 400;
+  font-size: 16px;
   color: #ffffff;
   background-color: #849d8f;
 }
@@ -38,4 +39,47 @@ a {
 }
 img {
   max-width: 100%;
+}
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  height: 46px;
+  padding: 0 23px;
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 23px;
+  background-color: #ee6441;
+  background-image: linear-gradient(to top, #ca3824, #f26843);
+  border: none;
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.64);
+}
+.button:focus,
+.button:hover {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0 1px 2px #ac1000;
+}
+.button:active {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
+  box-shadow: inset 0 2px 2px #942718;
+}
+.button_big {
+  height: 63px;
+  padding: 0 42px;
+  border-radius: 32px;
+  font-size: 2em;
+  line-height: 63px;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+.button_big:focus,
+.button_big:hover {
+  box-shadow: 0 2px 2px #ac1000;
+}
+.button_big:active {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
+  box-shadow: inset 0 2px 2px #942718;
 }
