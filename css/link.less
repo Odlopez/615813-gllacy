@@ -1,0 +1,27 @@
+//out: false
+.link {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.125em;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgb(255, 188, 158);
+    border-bottom: 1px solid rgba(255, 188, 158, 0.2);
+  }
+  &_dark {
+    font-size: 0.8125em;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgb(50, 50, 50);
+    border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgb(232, 77, 55);
+      border-bottom: 1px solid rgba(232, 77, 55, 0.2);
+    }
+  }
+}
