@@ -17,9 +17,9 @@
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="#">Каталог</a>
+            <a class="main-nav-link" href="catalog.html"><i>Каталог</i></a>
             <!-- Выпадающее главное меню -->
-            <ul class="main-menu">
+            <ul class="main-menu popup">
               <li class="main-menu__item">
                 <a class="main-menu__link main-menu__title" href="#">Новинки</a>
               </li>
@@ -38,27 +38,27 @@
             </ul>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="#">Доставка и оплата</a>
+            <a class="main-nav-link" href="#"><i>Доставка и оплата</i></a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="#">О Компании</a>
+            <a class="main-nav-link" href="#"><i>О Компании</i></a>
           </li>
         </ul>
       </nav>
       <a class="header__search" href="#">Поиск</a>
-      <form class="search-form" action="/echo"> <!-- Выпадающий поиск -->
+      <form class="search-form popup" action="/echo"> <!-- Выпадающий поиск -->
         <input class="search-form__input input-text" type="search" placeholder="Что ищем?">
       </form>
       <a class="header__entry-form" href="#">Вход</a>
-      <form class="login-form" action="/echo"> <!-- Выпадающее меню входа -->
-        <input class="login-form__email input-text" type="email" placeholder="Электронная почта">
-        <input class="login-form__password input-text" type="password" placeholder="Пароль">
-        <a class="login-form__btn button" href="#">Войти</a>
-        <a class="login-form__restoring link-dark" href="#">Забыли пароль?</a>
-        <a class="login-form__registration link-dark" href="#">Новая регистрация</a>
+      <form class="login-form popup" action="/echo"> <!-- Выпадающее меню входа -->
+        <input class="login-form__email input-text" type="email" name="user-email" placeholder="Электронная почта">
+        <input class="login-form__password input-text" type="password" name="user-password" placeholder="Пароль">
+        <a class="login-form__btn button" href="#">Войти</a> <!-- А не SUBMITH ли это!!!? -->
+        <a class="login-form__restoring link link_dark" href="#">Забыли пароль?</a>
+        <a class="login-form__registration link link_dark" href="#">Новая регистрация</a>
       </form>
       <a class="header__basket" href="#">Корзина</a>
-      <div class="basket-popup"> <!-- Скрытое наполнение корзины -->
+      <div class="basket-popup popup"> <!-- Скрытое наполнение корзины -->
         <ul class="basket-popup__list">
           <li class="basket-popup__item">
             <button class="basket-popup__delete-product button-close">удалить выбранный продукт</button>
@@ -279,7 +279,7 @@
       </ul>
     </footer>
     <!-- FEEDBACK-FORM -->
-    <form class="feedback-form" action="/echo">
+    <form class="feedback-form popup" action="/echo">
       <p class="feedback-form__title">
         <b class="feedback-form__subtitle">Мы обязательно вам ответим!</b>
         <button class="feedback-form__close button-close">Закрыть окно</button>
