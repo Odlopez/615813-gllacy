@@ -1,0 +1,45 @@
+//out: false
+.main-nav-link {
+  display: inline-block;
+  height: 32px;
+  padding: 7px 14px;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.125em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 16px;
+  cursor: pointer;
+  background-color:rgb(132, 157, 143);
+  i {
+    font-style: normal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
+    }
+  }
+  &:hover,
+  &:focus {
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+  }
+  &:active {
+    -webkit-box-shadow: inset 0 2px 1px rgb(105, 105, 105);
+            box-shadow: inset 0 2px 1px rgb(105, 105, 105);
+  }
+  &_actual,
+  &_actual:hover,
+  &_actual:focus,
+  &_actual:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 112, 88);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    i {
+      border: none;
+    }
+  }
+}
