@@ -50,6 +50,7 @@ img {
   line-height: 46px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
   border-radius: 23px;
   background-color: #ee6441;
   background-image: linear-gradient(to top, #ca3824, #f26843);
