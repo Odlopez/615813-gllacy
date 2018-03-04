@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <title>HTML Academy: Глейси Каталог</title>
 </head>
@@ -12,7 +13,7 @@
     <!-- HEADER -->
     <header class="header">
       <nav class="main-nav">
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="index.html">
           <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
         </a>
         <ul class="main-nav__list">
@@ -35,7 +36,7 @@
       <form class="login-form" action="/echo"> <!-- Выпадающее меню входа -->
         <input class="login-form__email input-text" type="email" placeholder="Электронная почта">
         <input class="login-form__password input-text" type="password" placeholder="Пароль">
-        <a class="login-form__btn button button_small" href="#">Войти</a>
+        <a class="login-form__btn button" href="#">Войти</a>
         <a class="login-form__restoring link-dark" href="#">Забыли пароль?</a>
         <a class="login-form__registration link-dark" href="#">Новая регистрация</a>
       </form>
@@ -50,7 +51,7 @@
           </li>
         </ul>
         <p class="basket-popup__amount">Итого: <span class="basket-popup__sum">750 руб.</span></p>
-        <button class="basket-popup__submith button button_small" type="submit">Оформить заказ</button>
+        <button class="basket-popup__submith button" type="submit">Оформить заказ</button>
       </div>
       <p class="timetable vcard">
         <span class="timetable__workhours workhours">С 10 до 20, ежедневно</span>
