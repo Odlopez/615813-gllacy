@@ -3,16 +3,21 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 9px 2.3% 0;
+  padding: 10px @indent 0;
   &-bottom-wrapper {
     flex-basis: 100%;
     display: flex;
   }
   &__search {
+    display: block;
+    width: 33px;
+    height: 33px;
     margin-left: auto;
+    font-size: 0;
+    background-color: rgb(176, 192, 183);
+    border-radius: 50%;
   }
 }
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -21,7 +26,11 @@
   }
   &__list {
     display: flex;
+    align-items: center;
+    max-width: 435px; //ОЧЕНЬ СПОРНОЕ РЕШЕНИЕ!!!!
+    min-height: 64px;
     .without_indentation;
+    margin-left: 10px;
   }
 }
 
