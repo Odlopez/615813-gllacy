@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- HEADER -->
+    <section class="wrap">
     <header class="header">
       <nav class="main-nav">
         <a class="main-nav__logo">
@@ -209,6 +209,7 @@
         <h2 class="visuallyhidden">Наше местоположение</h2>
         <img class="map__img" src="img/map.jpg" alt="Карта нашего местоположения">
         <!-- Тут будет вставлена карта -->
+        <iframe src="https://snazzymaps.com/embed/52911" width="100%" height="430px" style="border:none;"></iframe>
         <div class="contacts vcard"> <!-- Немножко микроформатов hCard-->
             <span>Адрес главного офиса</span>
             <span>и офлайн-магазина:</span>
@@ -265,6 +266,7 @@
           </p>
         </li>
       </ul>
+
     </footer>
     <!-- FEEDBACK-FORM -->
     <form class="feedback-form popup" action="/echo">
@@ -277,5 +279,7 @@
       <textarea class="feedback-form__text input-text" name="feedback-form__text" id="feedback-form__text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
       <button class="feedback-form__submith button" type="submit">Отправить</button>
     </form>
+  </section>
+
   </body>
 </html>
