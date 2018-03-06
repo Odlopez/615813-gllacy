@@ -1,0 +1,17 @@
+//out: false
+.hits {
+  padding: 0 @indent;
+  &__item {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: block;
+      width: 61px;
+      height: 61px;
+      background: url("../img/hit.svg") no-repeat;
+    }
+  }
+}

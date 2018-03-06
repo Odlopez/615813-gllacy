@@ -1,0 +1,28 @@
+//out: false
+.catalog-paginator {
+  display: flex;
+
+  &__link {
+    display: block;
+    width: 27px;
+    height: 27px;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.125;
+    color: rgb(50, 50, 50);
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: rgb(255, 255, 255);
+      background-color:  rgba(255, 255, 255, 0.2);
+    }
+    &:active,
+    &_active {
+      color: rgb(50, 50, 50);
+      background-color:  rgb(255, 255, 255);
+    }
+  }
+}
