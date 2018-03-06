@@ -84,6 +84,7 @@
         <input class="visuallyhidden" type="radio" name="slider" id="slider_1" checked>  <!-- Для переключения слайдера -->
         <input class="visuallyhidden" type="radio" name="slider" id="slider_2">
         <input class="visuallyhidden" type="radio" name="slider" id="slider_3">
+        <div class="background-viewport"></div>
         <div class="shop-window__content shop-window__content_first">
           <img class="shop-window__image" src="img/ice-creams-1.png" alt="Крем-брюле и пломбир" width="1045" height="881"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
           <p class="shop-window__desc">Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</p>
@@ -132,32 +133,40 @@
         <h2 class="visuallyhidden">Горячие товары</h2>
         <ul class="hits__list products">
           <li class="hits__item products__item">
-            <img class="products__image" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
-            <p class="products__cost">310<i class="roboto">c</i></p>
-            <a class="products__link link" href="catalog.html">
-              Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой
-            </a>
+            <div class="products__info">
+              <img class="products__image" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
+              <p class="products__cost">310<i class="roboto">c</i></p>
+            </div>
+              <a class="products__link link" href="catalog.html">
+                Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой
+              </a>
           </li>
           <li class="hits__item products__item">
-            <img class="products__image" src="img/product-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
-            <p class="products__cost">380<i class="roboto">c</i></p>
-            <a class="products__link link" href="catalog.html">
-              Сливочно-кофейное с&nbsp;кусочками шоколада
-            </a>
+            <div class="products__info">
+              <img class="products__image" src="img/product-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
+              <p class="products__cost">380<i class="roboto">c</i></p>
+            </div>
+              <a class="products__link link" href="catalog.html">
+                Сливочно-кофейное с&nbsp;кусочками шоколада
+              </a>
           </li>
           <li class="hits__item  products__item">
-            <img class="products__image" src="img/product-3.jpg" alt="Сливочно-клубничное" width="267" height="267">
-            <p class="products__cost">355<i class="roboto">c</i></p>
-            <a class="products__link link" href="catalog.html">
-              Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада
-            </a>
+            <div class="products__info">
+              <img class="products__image" src="img/product-3.jpg" alt="Сливочно-клубничное" width="267" height="267">
+              <p class="products__cost">355<i class="roboto">c</i></p>
+            </div>
+              <a class="products__link link" href="catalog.html">
+                Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада
+              </a>
           </li>
           <li class="hits__item  products__item">
-            <img class="products__image" src="img/product-4.jpg" alt="Сливочное крем-брюле" width="267" height="267">
-            <p class="products__cost">415<i class="roboto">c</i></p>
-            <a class="products__link link" href="catalog.html">
-              Сливочное крем-брюле с&nbsp;карамельной подливкой
-            </a>
+            <div class="products__info">
+              <img class="products__image" src="img/product-4.jpg" alt="Сливочное крем-брюле" width="267" height="267">
+              <p class="products__cost">415<i class="roboto">c</i></p>
+            </div>
+              <a class="products__link link" href="catalog.html">
+                Сливочное крем-брюле с&nbsp;карамельной подливкой
+              </a>
           </li>
         </ul>
       </section>
@@ -209,7 +218,7 @@
       <h2 class="visuallyhidden">Наше местоположение</h2>
       <img class="map__img" src="img/map.jpg" alt="Карта нашего местоположения">
       <!-- Тут будет вставлена карта -->
-      <iframe src="https://snazzymaps.com/embed/52911" width="1200" height="430" style="border:none;" allowfullscreen></iframe>
+      <iframe class="map__iframe" src="https://snazzymaps.com/embed/52911" width="1200" height="430" style="border:none;" allowfullscreen></iframe>
       <!-- Немножко микроформатов hCard-->
       <div class="contacts vcard">
           <span>Адрес главного офиса</span>
