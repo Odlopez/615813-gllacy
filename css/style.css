@@ -535,7 +535,14 @@ input[id="slider_3"]:checked ~ .background-viewport {
 .roboto {
   font-family: Rouble;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
+}
+.roboto::after {
+  content: "/кг";
+  font-family: Roboto;
+  font-size: 0.6666em;
+  font-weight: 700;
+  line-height: 1.5;
 }
 .map {
   width: 100%;
