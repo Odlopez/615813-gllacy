@@ -782,6 +782,131 @@ input[id="slider_3"]:checked ~ .background-viewport {
   font-size: 1.125em;
   line-height: 1.2222;
 }
+.footer {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 104px;
+  padding: 18px 2.3% 25px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  min-width: 185px;
+  margin-right: auto;
+  margin-bottom: 4px;
+  padding: 0;
+  font-size: 0;
+}
+.social__link {
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.social__link:hover,
+.social__link:focus {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+.social__link_twitter {
+  background: url("../img/twitter.svg") no-repeat 50% 50%;
+}
+.social__link_twitter:hover,
+.social__link_twitter:focus {
+  background: url("../img/twitter-hover.svg") no-repeat 50% 50%;
+}
+.social__link_twitter:active {
+  background: url("../img/twitter-active.svg") no-repeat 50% 50%;
+}
+.social__link_instagram {
+  background: url("../img/instagram.svg") no-repeat 50% 50%;
+}
+.social__link_instagram:hover,
+.social__link_instagram:focus {
+  background: url("../img/instagram-hover.svg") no-repeat 50% 50%;
+}
+.social__link_instagram:active {
+  background: url("../img/instagram-active.svg") no-repeat 50% 50%;
+}
+.social__link_facebook {
+  background: url("../img/facebook.svg") no-repeat 50% 50%;
+}
+.social__link_facebook:hover,
+.social__link_facebook:focus {
+  background: url("../img/facebook-hover.svg") no-repeat 50% 50%;
+}
+.social__link_facebook:active {
+  background: url("../img/facebook-active.svg") no-repeat 50% 50%;
+}
+.social__link_vk {
+  background: url("../img/vk.svg") no-repeat 50% 50%;
+}
+.social__link_vk:hover,
+.social__link_vk:focus {
+  background: url("../img/vk-hover.svg") no-repeat 50% 50%;
+}
+.social__link_vk:active {
+  background: url("../img/vk-active.svg") no-repeat 50% 50%;
+}
+.footer-links {
+  padding: 0;
+  margin: 0;
+}
+.footer-links__item {
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  font-size: 0.8125em;
+  font-weight: 400;
+  line-height: 1.1846;
+}
+.footer-links__item:hover .footer-links__link_hover,
+.footer-links__item:focus .footer-links__link_hover {
+  color: #ffffff;
+  visibility: visible;
+}
+.footer-links__item:hover .footer-links__link_normal,
+.footer-links__item:focus .footer-links__link_normal {
+  visibility: hidden;
+}
+.footer-links__item:hover::before,
+.footer-links__item:focus::before {
+  content: url("../img/heart.svg");
+  position: absolute;
+  left: 8px;
+}
+.footer-links__link_normal {
+  position: absolute;
+}
+.footer-links__link_hover {
+  font-weight: 700;
+  visibility: hidden;
+}
+.academy-info {
+  display: inline-block;
+  flex-basis: 190px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.academy-info__item {
+  display: block;
+  margin: 0;
+}
+.academy-info__item_logo {
+  line-height: 0;
+}
+.academy-info__copyright {
+  margin: 5px 0 0;
+}
+.academy-info__link {
+  display: inline;
+}
 .filter__submith {
   min-height: 36px;
   padding: 5px 27px;
