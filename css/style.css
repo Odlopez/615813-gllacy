@@ -161,20 +161,10 @@ ul {
   line-height: 1em;
   text-align: center;
   color: #ffffff;
+  -webkit-text-decoration: underline solid rgba(255, 255, 255, 0.2);
+  text-decoration: underline solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   outline: none;
-}
-.main-nav-link i {
-  display: block;
-  font-style: normal;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-.main-nav-link i:hover,
-.main-nav-link i:focus,
-.main-nav-link i:active {
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 .main-nav-link:hover,
 .main-nav-link:focus {
@@ -191,14 +181,9 @@ ul {
 .main-nav-link_actual:focus,
 .main-nav-link_actual:active {
   color: #ffffff;
+  text-decoration: none;
   background-color: #d07058;
   -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.main-nav-link_actual i,
-.main-nav-link_actual:hover i,
-.main-nav-link_actual:focus i,
-.main-nav-link_actual:active i {
   box-shadow: none;
 }
 .link {
@@ -207,26 +192,26 @@ ul {
   font-weight: 500;
   line-height: 1.125em;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: underline solid rgba(255, 255, 255, 0.2);
 }
 .link:hover,
 .link:focus,
 .link:active {
   color: #ffbc9e;
-  border-bottom: 1px solid rgba(255, 188, 158, 0.2);
+  text-decoration: underline solid rgba(255, 188, 158, 0.2);
 }
 .link_dark {
   font-size: 0.8125em;
   font-weight: normal;
   line-height: 1.5;
   color: #323232;
-  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+  text-decoration: underline solid rgba(50, 50, 50, 0.2);
 }
 .link_dark:hover,
 .link_dark:focus,
 .link_dark:active {
   color: #e84d37;
-  border-bottom: 1px solid rgba(232, 77, 55, 0.2);
+  text-decoration: underline solid rgba(232, 77, 55, 0.2);
 }
 .main-menu {
   width: 143px;
@@ -460,6 +445,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   display: flex;
   max-width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
@@ -492,9 +478,11 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .banner_first {
   background: #6c1123 url("../img/raspberry-bg.jpg") no-repeat 50% 50%;
+  background-size: cover;
 }
 .banner_second {
   background: #462b1f url("../img/chocolate-bg.jpg") no-repeat;
+  background-size: cover;
 }
 .hits {
   padding: 0 2.3%;
