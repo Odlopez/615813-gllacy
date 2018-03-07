@@ -198,22 +198,27 @@
           </ul>
         </div>
       </section>
-      <!-- BLOG -->
-      <article class="blog">
-        <h2 class="blog__title">Новое в&nbsp;нашем блоге</h2>
-        <a class="blog__link" href="#">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a>
-      </article>
-      <!-- DISTRIBUTION -->
-      <section class="distribution">
-        <h2 class="visuallyhidden">Подписка на наши новости</h2>
-        <label class="distribution__info" for="distribution__email"> <!-- Вероятно, такой большой label - это плохо -->
-          Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)
-        </label>
-        <form class="distribution__form" action="#">
-          <input class="distribution__email input-text" type="email" id="distribution__email" placeholder="Электронная почта">
-          <button class="distribution__submith button" type="submit">Отправить</button>
-        </form>
-      </section>
+      <!-- NEWS-WRAPPER -->
+      <div class="news-wrapper">
+        <!-- BLOG -->
+        <article class="blog">
+          <h2 class="blog__title">Новое в&nbsp;нашем блоге</h2>
+          <a class="blog__link link" href="#">10&nbsp;способов сервировки <br> фруктовых щербетов к <br> столу</a>
+        </article>
+        <!-- DISTRIBUTION -->
+        <section class="distribution">
+          <h2 class="visuallyhidden">Подписка на наши новости</h2>
+          <div class="distribution__wrapper">
+            <label class="distribution__info" for="distribution__email"> <!-- Вероятно, такой большой label - это плохо -->
+              Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не слать всякой ненужной ерунды. Честно =)
+            </label>
+            <form class="distribution__form" action="#">
+              <input class="distribution__email input-text" type="email" id="distribution__email" placeholder="Электронная почта">
+              <button class="distribution__submith button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- MAP -->
     <section class="map">
