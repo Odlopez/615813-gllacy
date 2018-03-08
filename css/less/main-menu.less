@@ -9,15 +9,6 @@
     font-weight: 700;
     -webkit-box-shadow: 0 6px 0 -5px rgb(204, 202, 201);
             box-shadow: 0 6px 0 -5px rgb(204, 202, 201);
-    a {
-      line-height: 16 / 14;
-      color: rgb(50, 50, 50);
-      &:hover,
-      &:focus,
-      &:active {
-        background: none;
-      }
-    }
   }
   &__item {
     width: 100%;
@@ -43,6 +34,14 @@
     &_active:active {
       color: rgb(255, 255, 255);
       background-color: rgb(208, 112, 88);
+    }
+    &_upper {
+      line-height: 16 / 14;
+      &:hover,
+      &:focus,
+      &:active {
+        background: none;
+      }
     }
   }
 }

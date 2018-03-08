@@ -26,7 +26,7 @@
     margin-top: 23px;
     transform: translateX(-50%);
   }
-  .shop-window__slider {
+   &__slider { //тут была вложенность; ошибка или необходимость? присмотреться к этому элементу в дальнейшем
     display: inline-block;
     width: 21px;
     height: 21px;
@@ -60,6 +60,7 @@ input[id="slider_1"]:checked {
     background-color: rgb(132, 157, 143);
   }
 }
+
 input[id="slider_2"]:checked {
   & ~ label[for="slider_2"] {
   background-color: rgb(255, 255, 255);
@@ -75,6 +76,7 @@ input[id="slider_2"]:checked {
     background-color: rgb(152, 161, 170);
   }
 }
+
 input[id="slider_3"]:checked {
   & ~ label[for="slider_3"] {
   background-color: rgb(255, 255, 255);

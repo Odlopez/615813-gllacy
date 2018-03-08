@@ -86,25 +86,27 @@
     height: 64px;
   }
   &__list {
+    .without_indentation;
     display: flex;
     align-items: center;
     max-width: 435px; //ОЧЕНЬ СПОРНОЕ РЕШЕНИЕ!!!!
     min-height: 64px;
-    .without_indentation;
     margin-left: 10px;
   }
 }
+
 .bread-crumbs {
-  display: flex;
   .without_indentation;
+  display: flex;
   margin-top: auto;
   margin-bottom: 5px;
 }
+
 .timetable {
+  .without_indentation;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  .without_indentation;
   margin-left: auto;
   font-weight: 700;
   &__workhours {
