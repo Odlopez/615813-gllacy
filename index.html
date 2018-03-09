@@ -43,14 +43,14 @@
         </ul>
       </nav>
       <a class="header__search" href="#">Поиск</a>
-      <form class="search-form popup" action="/echo"> <!-- Выпадающий поиск -->
+      <form class="search-form popup" action="https://echo.htmlacademy.ru"> <!-- Выпадающий поиск -->
         <input class="search-form__input input-text" type="search" placeholder="Что ищем?">
       </form>
       <a class="header__entry-form" href="#">Вход</a>
-      <form class="login-form popup" action="/echo"> <!-- Выпадающее меню входа -->
+      <form class="login-form popup" action="https://echo.htmlacademy.ru"> <!-- Выпадающее меню входа -->
         <input class="login-form__email input-text" type="email" name="user-email" placeholder="Электронная почта">
         <input class="login-form__password input-text" type="password" name="user-password" placeholder="Пароль">
-        <a class="login-form__btn button" href="#">Войти</a> <!-- А не SUBMITH ли это!!!? -->
+        <button class="login-form__btn button" href="#">Войти</button> <!-- Сделал кнопку вместо ссылки -->
         <a class="login-form__restoring link link_dark" href="#">Забыли пароль?</a>
         <a class="login-form__registration link link_dark" href="#">Новая регистрация</a>
       </form>
@@ -212,7 +212,7 @@
             <label class="distribution__info" for="distribution__email"> <!-- Вероятно, такой большой label - это плохо -->
               Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не слать всякой ненужной ерунды. Честно =)
             </label>
-            <form class="distribution__form" action="#">
+            <form class="distribution__form" action="https://echo.htmlacademy.ru">
               <input class="distribution__email input-text" type="email" id="distribution__email" placeholder="Электронная почта">
               <button class="distribution__submith button" type="submit">Отправить</button>
             </form>
@@ -290,7 +290,7 @@
       </ul>
     </footer>
     <!-- FEEDBACK-FORM -->
-    <form class="feedback-form popup" action="/echo">
+    <form class="feedback-form popup" action="https://echo.htmlacademy.ru">
       <p class="feedback-form__title">
         <b class="feedback-form__subtitle">Мы обязательно вам ответим!</b>
         <button class="feedback-form__close button-close">Закрыть окно</button>
