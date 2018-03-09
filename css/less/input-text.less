@@ -1,20 +1,21 @@
 //out: false
 .input-text {
-  width: 100%;
+   width: 100%;
   height: 44px;
   margin-bottom: 20px;
   padding: 8px 14px;
   font-weight: 700;
-  line-height: 1.5em;
-  border: 2px solid rgb(211, 211, 210);
+  line-height: 1.5;
+  border: none;
   border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
   &:hover {
-    border: 2px solid rgb(154, 154, 154);
+    box-shadow: inset 0 0 0 2px rgba(154, 154, 154, 0.52);
   }
   &:focus,
   &:active {
     color: rgb(50, 50, 50);
-    border: 2px solid rgb(46, 136, 228);
+    box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
     outline: none;
   }
   &::-webkit-input-placeholder {
