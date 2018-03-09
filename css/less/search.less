@@ -1,0 +1,42 @@
+//out: false
+.search {
+  position: relative;
+  &:hover > .search__form {
+    display: block;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    width: 33px;
+    height: 33px;
+    margin-bottom: 4px;
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    outline: none;
+    &::before {
+      content: url("../img/images/search.svg");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover,
+    &:focus {
+      background-color: rgb(248, 247, 244);
+      &::before {
+        content: url("../img/images/search-hover.svg");
+      }
+    }
+    &:hover ~ .search-form {
+      display: block;
+    }
+  }
+  &__form {
+    right: 0;
+    width: 340px;
+  }
+  &__input {
+    margin-bottom: 0;
+  }
+}
