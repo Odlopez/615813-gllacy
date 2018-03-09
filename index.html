@@ -13,8 +13,8 @@
           <img src="img/images/logo.svg" alt="Логотип Gllacy Shop" width="154" height="64">
         </a>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav-link" href="catalog.html">Каталог</a>
+          <li class="main-nav__item main-nav__item_catalog">
+            <a class="main-nav-link main-nav-link_catalog" href="catalog.html">Каталог</a>
             <!-- Выпадающее главное меню -->
             <ul class="main-menu popup">
               <li class="main-menu__item main-menu__title">
@@ -42,10 +42,12 @@
           </li>
         </ul>
       </nav>
-      <a class="header__search" href="#">Поиск</a>
-      <form class="search-form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающий поиск -->
-        <input class="search-form__input input-text" type="search" placeholder="Что ищем?" aria-label="Найти">
-      </form>
+      <div class="search">
+        <a class="search__link" href="#">Поиск</a>
+        <form class="search__form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающий поиск -->
+          <input class="search__input input-text" type="search" placeholder="Что ищем?" aria-label="Найти">
+        </form>
+      </div>
       <a class="header__entry-form" href="#">Вход</a>
       <form class="login-form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающее меню входа -->
         <input class="login-form__email input-text" type="email" name="user-email" placeholder="Электронная почта">

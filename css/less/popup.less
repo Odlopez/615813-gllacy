@@ -1,22 +1,16 @@
 //out: false
 .popup {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  vertical-align: middle;
   padding: 20px 15px;
   background-color:  #f8f7f4;;
   border: none;
   border-radius: 5px;
   -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  &:hover,
+  &:focus,
+  &:active {
+    display: block;
+  }
 }
