@@ -45,14 +45,14 @@
       <div class="search">
         <a class="link-popup search__link" href="#">Поиск</a>
         <form class="search__form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающий поиск -->
-          <input class="search__input input-text" type="search" placeholder="Что ищем?" aria-label="Найти">
+          <input class="input-text search__input" type="search" name="search-object" placeholder="Что ищем?" aria-label="Найти">
         </form>
       </div>
       <div class="entry">
         <a class="link-popup entry__link" href="#">Вход</a>
         <form class="entry__form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающее меню входа -->
-          <input class="entry__email input-text" type="email" name="user-email" placeholder="Электронная почта">
-          <input class="entry__password input-text" type="password" name="user-password" placeholder="Пароль">
+          <input class="input-text entry__email" type="email" name="user-email" placeholder="Электронная почта">
+          <input class="input-text entry__password" type="password" name="user-password" placeholder="Пароль">
           <button class="entry__btn button" type="submit">Войти</button> <!-- Сделал кнопку вместо ссылки -->
           <a class="entry__restoring link link_dark" href="#">Забыли пароль?</a>
           <a class="entry__registration link link_dark" href="#">Новая регистрация</a>
@@ -93,17 +93,17 @@
         <input class="visuallyhidden" type="radio" name="slider" id="slider_3">
         <div class="background-viewport"></div>
         <div class="shop-window__content shop-window__content_first">
-          <img class="shop-window__image" src="img/images/ice-creams-1.png" alt="Крем-брюле и пломбир" width="1045" height="881"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
+          <img class="shop-window__image" src="img/images/ice-creams-1.png" alt="Крем-брюле и пломбир" width="1045" height="881">
           <p class="shop-window__desc">Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</p>
           <a class="shop-window__link button button_big" href="catalog.html">Давайте оба!</a>
         </div>
         <div class="shop-window__content shop-window__content_second">
-          <img class="shop-window__image" src="img/images/ice-creams-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
+          <img class="shop-window__image" src="img/images/ice-creams-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
           <p class="shop-window__desc">Шоколадный пломбир и&nbsp;лимонный сорбет</p>
           <a class="shop-window__link button button_big" href="catalog.html">Давайте оба!</a>
         </div>
         <div class="shop-window__content  shop-window__content_third">
-          <img class="shop-window__image" src="img/images/ice-creams-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854"> <!--Мороженки хочется сделать фоном, но, думаю, зря-->
+          <img class="shop-window__image" src="img/images/ice-creams-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
           <p class="shop-window__desc">Пломбир с&nbsp;помадкой и&nbsp;клубничный щербет</p>
           <a class="shop-window__link button button_big" href="catalog.html">Давайте оба!</a>
         </div>
@@ -220,7 +220,7 @@
               Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не слать всякой ненужной ерунды. Честно =)
             </label>
             <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="distribution__email input-text" type="email" id="distribution__email" placeholder="Электронная почта" aria-label="email для подписки">
+              <input class="distribution__email input-text" type="email" name="email-for-dispatch" id="distribution__email" placeholder="Электронная почта" aria-label="email для подписки">
               <button class="distribution__submith button" type="submit">Отправить</button>
             </form>
           </div>

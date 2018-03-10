@@ -21,7 +21,36 @@
     }
   }
   &__form {
-    right: 0;
+    right: -2px;
     width: 277px;
+    padding-left: 20px;
+  }
+  &__email,
+  &__password {
+    &::-webkit-input-placeholder {
+      font-size: 0.875em;
+      line-height: 1.714;
+    }
+    &::-moz-placeholder {
+      font-size: 0.875em;
+      line-height: 1.714;
+    }
+    &:-moz-placeholder {
+      font-size: 0.875em;
+      line-height: 1.714;
+    }
+    &:-ms-input-placeholder {
+      font-size: 0.875em;
+      line-height: 1.714;
+    }
+  }
+  &__btn {
+    float: left;
+    margin-right: 20px;
+  }
+  &__restoring,
+  &__registration {
+    clear: right;
   }
 }
+
