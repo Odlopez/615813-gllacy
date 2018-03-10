@@ -43,31 +43,35 @@
         </ul>
       </nav>
       <div class="search">
-        <a class="search__link" href="#">Поиск</a>
+        <a class="link-popup search__link" href="#">Поиск</a>
         <form class="search__form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающий поиск -->
           <input class="search__input input-text" type="search" placeholder="Что ищем?" aria-label="Найти">
         </form>
       </div>
-      <a class="header__entry-form" href="#">Вход</a>
-      <form class="login-form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающее меню входа -->
-        <input class="login-form__email input-text" type="email" name="user-email" placeholder="Электронная почта">
-        <input class="login-form__password input-text" type="password" name="user-password" placeholder="Пароль">
-        <button class="login-form__btn button" type="submit">Войти</button> <!-- Сделал кнопку вместо ссылки -->
-        <a class="login-form__restoring link link_dark" href="#">Забыли пароль?</a>
-        <a class="login-form__registration link link_dark" href="#">Новая регистрация</a>
-      </form>
-      <a class="header__basket" href="#" aria-label="Корзина">Пусто</a>
-      <div class="basket-popup popup"> <!-- Скрытое наполнение корзины -->
-        <ul class="basket-popup__list">
-          <li class="basket-popup__item">
-            <button class="basket-popup__delete-product button-close" type="button">удалить выбранный продукт</button>
-            <p class="basket-popup__product">Пломбир с апельсиновым джемом</p>
-            <p class="basket-popup__unit-price">1,5 кг х <span class="basket-popup__price">200 руб.</span></p>
-            <p class="basket-popup__cost">300 руб.</p>
-          </li>
-        </ul>
-        <p class="basket-popup__amount">Итого: <span class="basket-popup__sum">750 руб.</span></p>
-        <a class="basket-popup__submith button" href="#">Оформить заказ</a> <!-- кнопку переделал в ссылку -->
+      <div class="entry">
+        <a class="link-popup entry__link" href="#">Вход</a>
+        <form class="entry__form popup" action="https://echo.htmlacademy.ru" method="post"> <!-- Выпадающее меню входа -->
+          <input class="entry__email input-text" type="email" name="user-email" placeholder="Электронная почта">
+          <input class="entry__password input-text" type="password" name="user-password" placeholder="Пароль">
+          <button class="entry__btn button" type="submit">Войти</button> <!-- Сделал кнопку вместо ссылки -->
+          <a class="entry__restoring link link_dark" href="#">Забыли пароль?</a>
+          <a class="entry__registration link link_dark" href="#">Новая регистрация</a>
+        </form>
+      </div>
+      <div class="basket">
+        <a class="link-popup basket__link" href="#" aria-label="Корзина">Корзина</a>
+        <div class="basket__popup popup"> <!-- Скрытое наполнение корзины -->
+          <ul class="basket__list">
+            <li class="basket__item">
+              <button class="basket__delete-product button-close" type="button">удалить выбранный продукт</button>
+              <p class="basket__product">Пломбир с апельсиновым джемом</p>
+              <p class="basket__unit-price">1,5 кг х <span class="basket-popup__price">200 руб.</span></p>
+              <p class="basket__cost">300 руб.</p>
+            </li>
+          </ul>
+          <p class="basket__amount">Итого: <span class="basket-popup__sum">750 руб.</span></p>
+          <a class="basket__submith button" href="#">Оформить заказ</a> <!-- кнопку переделал в ссылку -->
+        </div>
       </div>
       <div class="header-bottom-wrapper">
         <p class="timetable vcard">

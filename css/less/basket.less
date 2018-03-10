@@ -1,0 +1,25 @@
+//out: false
+.basket {
+  position: relative;
+  &:hover > .basket__popup {
+    display: block;
+  }
+  &__link {
+    min-width: 117px;
+    &::before {
+      content: url("../img/images/basket-empty.svg");
+    }
+    &:hover,
+    &:focus {
+      color: rgb(50, 50, 50);
+      background-color: rgb(248, 247, 244);
+      &::before {
+        content: url("../img/images/basket-full.svg");
+      }
+    }
+  }
+  &__popup {
+    right: 0;
+    width: 540px;
+  }
+}
