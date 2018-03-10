@@ -1,8 +1,16 @@
 //out: false
 .basket {
   position: relative;
+  color: rgb(50, 50, 50);
   &:hover > .basket__popup {
-    display: block;
+    display: flex;
+  }
+  &__popup {
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 540px;
   }
   &__link {
     min-width: 117px;
@@ -14,12 +22,96 @@
       color: rgb(50, 50, 50);
       background-color: rgb(248, 247, 244);
       &::before {
+        content: url("../img/images/basket-empty-hover.svg");
+      }
+    }
+    &_actual,
+    &_actual:hover,
+    &_actual:focus,
+    &_actual:active {
+      color: rgb(50, 50, 50);
+      background-color: rgb(248, 247, 244);
+      &::before {
         content: url("../img/images/basket-full.svg");
       }
     }
   }
-  &__popup {
-    right: 0;
-    width: 540px;
+  &__list {
+    .without_indentation;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.8125em;
+    font-weight: 400;
+    line-height: 1.231;
+
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 100%;
+    padding-bottom: 20px;
+    &:last-of-type {
+      border-bottom: 1px solid rgb(202, 202, 199);
+    }
+    & > * {
+      margin-top: 10px;
+    }
+  }
+  &__delete-product {
+    position: relative;
+    font-size: 0;
+    background: none;
+    border: none;
+    outline: none;
+    &::before {
+      content: url("../img/images/x-small.svg");
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover::before,
+    &:focus::before {
+      content: url("../img/images/x-small-hover.svg");
+    }
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+  &__image {
+    width: 33px;
+    height: 33px;
+    margin: 0 14px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+    &_first {
+      background-image: url("../img/images/product-1.jpg");
+    }
+    &_second {
+      background-image: url("../img/images/product-3.jpg");
+    }
+  }
+  &__product {
+    width: 220px;
+    margin-bottom: 0;
+  }
+  &__unit-price {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+  &__price {
+    color: rgb(153, 153, 153);
+  }
+  &__cost {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+  &__amount {
+    font-size: 0.9375em;
+    font-weight: 700;
+    line-height: 1.2;
   }
 }
