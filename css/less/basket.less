@@ -60,20 +60,17 @@
     }
   }
   &__delete-product {
-    position: relative;
+    width: 11px;
+    height: 11px;
     font-size: 0;
-    background: none;
+    background-color: transparent;
+    background-image: url("../img/images/x-small.svg");
+    background-size: cover;
     border: none;
     outline: none;
-    &::before {
-      content: url("../img/images/x-small.svg");
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    &:hover::before,
-    &:focus::before {
-      content: url("../img/images/x-small-hover.svg");
+    &:hover,
+    &:focus {
+      background-image: url("../img/images/x-small-hover.svg");
     }
     &:active {
       transform: scale(1.2);

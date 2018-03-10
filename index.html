@@ -216,7 +216,7 @@
       </div>
     </main>
     <!-- MAP -->
-    <section class="map">
+    <section class="map" id="map">
       <h2 class="visuallyhidden">Наше местоположение</h2>
       <img class="map__img" src="img/images/map.jpg" alt="Большая Конюшенная улица, 19/8. Санкт-Петербург, Россия, 191186">
       <!-- Тут будет вставлена карта -->
@@ -232,7 +232,7 @@
           <span>Для заказов по телефону:</span>
           <b class="contacts__tel tel">8 812 450-25-25</b>
           <span class="contacts__type workhours">(с 10 до 20 ежедневно)</span>
-          <a class="contacts__btn button" href="#">Форма обратной связи</a>
+          <a class="contacts__btn button" href="#overlay">Форма обратной связи</a> <!-- сделал лейблами, пока JS'ом не научился (раньше была ссылка) -->
       </div>
     </section>
     <!-- FOOTER -->
@@ -285,16 +285,17 @@
       </ul>
     </footer>
     <!-- FEEDBACK-FORM -->
-
-    <form class="feedback-form popup" action="https://echo.htmlacademy.ru" method="post">
-      <p class="feedback-form__title">
-        <b class="feedback-form__subtitle">Мы обязательно вам ответим!</b>
-        <button class="feedback-form__close button-close" type="button">Закрыть окно</button>
-      </p>
-      <input class="feedback-form__login input-text" type="text" placeholder="Как вас зовут?">
-      <input class="feedback-form__email input-text" type="email" placeholder="Ваша почта для ответа?">
-      <textarea class="feedback-form__text input-text" name="feedback-form__text" id="feedback-form__text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-      <button class="feedback-form__submith button" type="submit">Отправить</button>
-    </form>
+    <div class="overlay" id="overlay">
+      <form class="feedback-form popup" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-form__title">
+          <b class="feedback-form__subtitle">Мы обязательно вам ответим!</b>
+          <a class="feedback-form__close button-close" href="#map">Закрыть окно</a> <!-- сделал лейблами, пока JS'ом не научился (раньше была кнопка) -->
+        </p>
+        <input class="feedback-form__login input-text" type="text" name="feedback-form__login" placeholder="Как вас зовут?">
+        <input class="feedback-form__email input-text" type="email" name="feedback-form__email" placeholder="Ваша почта для ответа?">
+        <textarea class="feedback-form__text input-text" name="feedback-form__text" id="feedback-form__text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="feedback-form__submith button" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -530,21 +530,18 @@ ul {
   margin-top: 10px;
 }
 .basket__delete-product {
-  position: relative;
+  width: 11px;
+  height: 11px;
   font-size: 0;
-  background: none;
+  background-color: transparent;
+  background-image: url("../img/images/x-small.svg");
+  background-size: cover;
   border: none;
   outline: none;
 }
-.basket__delete-product::before {
-  content: url("../img/images/x-small.svg");
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.basket__delete-product:hover::before,
-.basket__delete-product:focus::before {
-  content: url("../img/images/x-small-hover.svg");
+.basket__delete-product:hover,
+.basket__delete-product:focus {
+  background-image: url("../img/images/x-small-hover.svg");
 }
 .basket__delete-product:active {
   transform: scale(1.2);
@@ -1080,6 +1077,68 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .academy-info__link {
   display: inline;
+}
+.feedback-form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  display: block;
+  width: 477px;
+  min-height: 442px;
+  padding: 18px 25px 25px;
+}
+.feedback-form__title {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.1667;
+  color: #323232;
+}
+.feedback-form__close {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 18px;
+  height: 17px;
+  font-size: 0;
+  background-image: url("../img/images/x-big.svg");
+  background-size: cover;
+}
+.feedback-form__close:hover,
+.feedback-form__close:focus {
+  background-image: url("../img/images/x-big-hover.svg");
+}
+.feedback-form__close:active {
+  transform: scale(1.2);
+}
+.feedback-form__login,
+.feedback-form__email {
+  display: block;
+  max-width: 267px;
+}
+.feedback-form__text {
+  min-height: 155px;
+}
+.feedback-form__submith {
+  display: block;
+  margin-left: auto;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.32);
+}
+#overlay:target {
+  display: block;
 }
 .bread-crumbs {
   padding: 0;
