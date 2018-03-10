@@ -148,7 +148,7 @@ ul {
 .link-popup {
   position: relative;
   display: block;
-  height: 33px;
+  min-height: 33px;
   margin-left: 10px;
   margin-bottom: 4px;
   padding: 8px 16px 8px 44px;
@@ -172,7 +172,7 @@ ul {
   align-items: center;
   margin-right: auto;
 }
-.main-nav__logo {
+.main-nav__logo-link {
   height: 64px;
 }
 .main-nav__list {
@@ -519,15 +519,12 @@ ul {
 }
 .basket__item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-basis: 100%;
   padding-bottom: 20px;
 }
 .basket__item:last-of-type {
   border-bottom: 1px solid #cacac7;
-}
-.basket__item > * {
-  margin-top: 10px;
 }
 .basket__delete-product {
   width: 11px;
@@ -851,6 +848,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .blog {
   flex-basis: 48.846%;
+  max-width: 48.846%;
   min-height: 220px;
   padding: 25px 20px;
   color: #323232;
@@ -873,6 +871,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .distribution {
   flex-basis: 48.846%;
+  max-width: 48.846%;
   min-height: 210px;
   padding: 5px;
   background: url("../img/images/gradient-bg.svg") no-repeat;
@@ -894,6 +893,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .distribution__info {
   flex-basis: 100%;
+  max-width: 100%;
 }
 .distribution__form {
   display: flex;

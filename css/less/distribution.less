@@ -1,6 +1,7 @@
 //out: false
 .distribution {
   flex-basis: @double-cell;
+  max-width: @double-cell; // против переполнения контента и наезжания на соседний блок
   min-height: 210px;
   padding: 5px;
   background: url("../img/images/gradient-bg.svg") no-repeat;
@@ -21,6 +22,7 @@
   }
   &__info {
     flex-basis: 100%;
+    max-width: 100%; // против переполнения контента и выезжания текста за пределы блока
   }
   &__form {
     display: flex;
