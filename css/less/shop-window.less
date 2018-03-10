@@ -45,50 +45,80 @@
   }
 }
 
-input[id="slider_1"]:checked {
-  & ~ label[for="slider_1"] {
-  background-color: rgb(255, 255, 255);
+input[id="slider_1"] {
+  &:focus ~ label[for="slider_1"] {
+    animation: flicker 0.25s ease-in-out 1; // чтобы видно было куда попадаешь в случае с focus, а не hover
   }
-  & ~ .shop-window__content_second,
-  & ~ .shop-window__content_third {
-    display: none;
-  }
-  & ~ .shop-window__content_first {
-    display: block;
-  }
-  & ~ .background-viewport {
-    background-color: rgb(132, 157, 143);
-  }
-}
-
-input[id="slider_2"]:checked {
-  & ~ label[for="slider_2"] {
-  background-color: rgb(255, 255, 255);
-  }
-  & ~ .shop-window__content_first,
-  & ~ .shop-window__content_third {
-    display: none;
-  }
-  & ~ .shop-window__content_second {
-    display: block;
-  }
-  & ~ .background-viewport {
-    background-color: rgb(152, 161, 170);
+  &:checked {
+    & ~ label[for="slider_1"] {
+    background-color: rgb(255, 255, 255);
+    }
+    & ~ .shop-window__content_second,
+    & ~ .shop-window__content_third {
+      display: none;
+    }
+    & ~ .shop-window__content_first {
+      display: block;
+    }
+    & ~ .background-viewport {
+      background-color: rgb(132, 157, 143);
+    }
   }
 }
 
-input[id="slider_3"]:checked {
-  & ~ label[for="slider_3"] {
-  background-color: rgb(255, 255, 255);
+input[id="slider_2"] {
+  &:focus ~ label[for="slider_2"] {
+    animation: flicker 0.25s ease-in-out 1; // чтобы видно было куда попадаешь в случае с focus, а не hover
   }
-  & ~ .shop-window__content_first,
-  & ~ .shop-window__content_second {
-    display: none;
+  &:checked {
+    & ~ label[for="slider_2"] {
+    background-color: rgb(255, 255, 255);
+    }
+    & ~ .shop-window__content_first,
+    & ~ .shop-window__content_third {
+      display: none;
+    }
+    & ~ .shop-window__content_second {
+      display: block;
+    }
+    & ~ .background-viewport {
+      background-color: rgb(152, 161, 170);
+    }
   }
-  & ~ .shop-window__content_third {
-    display: block;
+}
+
+input[id="slider_3"] {
+  &:focus ~ label[for="slider_3"] {
+    animation: flicker 0.25s ease-in-out 1; // чтобы видно было куда попадаешь в случае с focus, а не hover
   }
-  & ~ .background-viewport {
-    background-color: rgb(175, 158, 146);
+  &:checked {
+    & ~ label[for="slider_3"] {
+    background-color: rgb(255, 255, 255);
+    }
+    & ~ .shop-window__content_first,
+    & ~ .shop-window__content_second {
+      display: none;
+    }
+    & ~ .shop-window__content_third {
+      display: block;
+    }
+    & ~ .background-viewport {
+      background-color: rgb(175, 158, 146);
+    }
+  }
+}
+
+@keyframes flicker {
+  12.5% {
+    transform: translateX(1.5px) skew(-3deg, -3deg) scale(1.2);
+  }
+  37.5% {
+    transform: translateX(-1.5px) skew(3deg, 3deg);
+  }
+  62.5% {
+    transform: translateX(1px) skew(-2deg, -2deg);
+  }
+  87.5% {
+    transform: translateX(-1px) skew(2deg, 2deg);
   }
 }
