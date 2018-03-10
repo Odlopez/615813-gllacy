@@ -516,7 +516,6 @@ ul {
   left: 50%;
   margin-top: 28px;
   transform: translateX(-50%);
-  background: blue;
 }
 .shop-window__slider {
   display: inline-block;
