@@ -291,9 +291,12 @@
           <b class="feedback-form__subtitle">Мы обязательно вам ответим!</b>
           <a class="feedback-form__close button-close" href="#map">Закрыть окно</a> <!-- пока JS'ом не научился будет ссылка, а должна быть кнопка -->
         </p>
-        <input class="feedback-form__login input-text" type="text" name="feedback-form__login" placeholder="Как вас зовут?">
-        <input class="feedback-form__email input-text" type="email" name="feedback-form__email" placeholder="Ваша почта для ответа?">
+        <input class="feedback-form__login input-text" type="text" name="feedback-form__login" id="feedback-form__login" placeholder="Как вас зовут?">
+        <input class="feedback-form__email input-text" type="email" name="feedback-form__email" id="feedback-form__email" placeholder="Ваша почта для ответа?">
+        <label class="visuallyhidden" for="feedback-form__login">Логин пользователя</label>
+        <label class="visuallyhidden" for="feedback-form__email">email пользователя</label>
         <textarea class="feedback-form__text input-text" name="feedback-form__text" id="feedback-form__text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        <label class="visuallyhidden" for="feedback-form__text">Написать сообщение</label>
         <button class="feedback-form__submith button" type="submit">Отправить</button>
       </form>
     </div>
