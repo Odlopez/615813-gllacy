@@ -1010,6 +1010,29 @@ input[id="slider_3"]:checked ~ .background-viewport {
   min-height: 104px;
   padding: 18px 2.3% 25px;
 }
+.academy-info {
+  display: inline-block;
+  flex-basis: 190px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.academy-info__item {
+  display: block;
+  margin: 0;
+}
+.academy-info__item_logo {
+  line-height: 0;
+}
+.academy-info__copyright {
+  margin: 5px 0 0;
+}
+.academy-info__link {
+  display: inline;
+}
 .social {
   display: flex;
   justify-content: space-between;

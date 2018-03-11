@@ -1,0 +1,40 @@
+//out: false
+.footer-links {
+  .without_indentation;
+  &__item {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    font-size: 0.8125em;
+    font-weight: 400;
+    line-height: 1.1846;
+    &:hover,
+    &:focus {
+      .footer-links__link_hover {
+        color: rgb(255, 255, 255);
+        visibility: visible;
+      }
+      .footer-links__link_normal {
+        visibility: hidden;
+      }
+      &::before {
+        content: url("../img/images/heart.svg");
+        position: absolute;
+        left: 8px;
+      }
+    }
+  }
+  &__link {
+    color: rgb(255, 255, 255);
+    text-decoration: underline solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    &_normal {
+      position: absolute;
+    }
+    &_hover {
+      font-weight: 700;
+      visibility: hidden;
+    }
+  }
+}
