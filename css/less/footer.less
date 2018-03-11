@@ -21,10 +21,12 @@
     height: 38px;
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    outline: none;
     &:hover,
     &:focus {
       border: 3px solid rgba(255, 255, 255, 0.7);
+    }
+    &:active {
+      outline: none;
     }
     &_twitter {
       background: url("../img/images/twitter.svg") no-repeat 50% 50%;
@@ -95,13 +97,19 @@
       }
     }
   }
-  &__link_normal {
-    position: absolute;
+  &__link {
+    color: rgb(255, 255, 255);
+    text-decoration: underline solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    &_normal {
+      position: absolute;
+    }
+    &_hover {
+      font-weight: 700;
+      visibility: hidden;
+    }
   }
-  &__link_hover {
-    font-weight: 700;
-    visibility: hidden;
-  }
+
 }
 
 .academy-info {

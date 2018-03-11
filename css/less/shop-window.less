@@ -39,6 +39,9 @@
     &:focus {
       background-color: rgb(178, 193, 183);
     }
+    &:hover {
+      outline: none;
+    }
     &:active {
       background-color: rgb(255, 255, 255);
     }
@@ -47,7 +50,9 @@
 
 input[id="slider_1"] {
   &:focus ~ label[for="slider_1"] {
-    animation: flicker 0.25s ease-in-out 1; // чтобы видно было куда попадаешь в случае с focus, а не hover
+    animation: // чтобы видно было куда попадаешь в случае с focus, а не hover
+      flicker 0.25s ease-in-out 1,
+      outline 0.1s 0.2s ease-in-out 1 forwards;
   }
   &:checked {
     & ~ label[for="slider_1"] {
@@ -68,7 +73,9 @@ input[id="slider_1"] {
 
 input[id="slider_2"] {
   &:focus ~ label[for="slider_2"] {
-    animation: flicker 0.25s ease-in-out 1; // чтобы видно было куда попадаешь в случае с focus, а не hover
+    animation: // чтобы видно было куда попадаешь в случае с focus, а не hover
+      flicker 0.25s ease-in-out 1,
+      outline 0.1s 0.2s ease-in-out 1 forwards;
   }
   &:checked {
     & ~ label[for="slider_2"] {
@@ -89,7 +96,9 @@ input[id="slider_2"] {
 
 input[id="slider_3"] {
   &:focus ~ label[for="slider_3"] {
-    animation: flicker 0.25s ease-in-out 1; // чтобы видно было куда попадаешь в случае с focus, а не hover
+    animation: // чтобы видно было куда попадаешь в случае с focus, а не hover
+      flicker 0.25s ease-in-out 1,
+      outline 0.1s 0.2s ease-in-out 1 forwards;
   }
   &:checked {
     & ~ label[for="slider_3"] {
@@ -120,5 +129,12 @@ input[id="slider_3"] {
   }
   87.5% {
     transform: translateX(-1px) skew(2deg, 2deg);
+  }
+}
+
+@keyframes outline {
+  to {
+    outline: 1px solid rgb(77, 144, 254);
+    outline-offset: 2px;
   }
 }
