@@ -62,7 +62,7 @@
         </form>
       </div>
       <div class="basket">
-        <a class="link-popup basket__link basket__link_actual" href="#" aria-label="Корзина">2 товара</a>
+        <a class="basket__link basket__link_actual link-popup" href="#" aria-label="Корзина">2 товара</a>
         <div class="basket__popup popup"> <!-- Скрытое наполнение корзины -->
           <ul class="basket__list">
             <li class="basket__item">
@@ -91,9 +91,21 @@
           <li class="bread-crumbs__item">
             <a class="bread-crumbs__link link" href="index.html">Главная</a>
           </li>
+          <li class="bread-crumbs__item bread-crumbs__item_arrows">
+            <svg class="bread-crumbs__arrows" width="10" height="8">
+              <polyline class="bread-crumbs__arrow bread-crumbs__arrow_first" points="1,1 4,4 1,7"></polyline>
+              <polyline class="bread-crumbs__arrow bread-crumbs__arrow_second" points="5,1 8,4 5,7"></polyline>
+            </svg>
+          </li>
           <li class="bread-crumbs__item">
             <a class="bread-crumbs__link link" href="#">Каталог</a>
           </li>
+          <li class="bread-crumbs__item bread-crumbs__item_arrows">
+              <svg class="bread-crumbs__arrows" width="10" height="8">
+                <polyline class="bread-crumbs__arrow bread-crumbs__arrow_first" points="1,1 4,4 1,7"></polyline>
+                <polyline class="bread-crumbs__arrow bread-crumbs__arrow_second" points="5,1 8,4 5,7"></polyline>
+              </svg>
+            </li>
           <li class="bread-crumbs__item">Сливочное</li>
         </ul>
         <p class="timetable vcard">
@@ -277,8 +289,13 @@
         </ul>
         <!-- пагинатор -->
         <ul class="catalog-paginator">
-          <li class="catalog-paginator__item">
-            <a class="paginator-arrow-left">страницу назад</a>
+          <li class="catalog-paginator__item catalog-paginator__item_arrow">
+            <a class="catalog-paginator__link-arrow" href="">
+              страницу назад
+              <svg class="catalog-paginator__arrow-svg catalog-paginator__arrow-svg_left">
+                  <polyline class="catalog-paginator__arrow catalog-paginator__arrow_left" points="7,0 2,6 2,7 7,12"></polyline>
+              </svg>
+            </a>
           </li>
           <li class="catalog-paginator__item">
             <a class="catalog-paginator__link catalog-paginator__link_active" href="#">1</a>
@@ -295,8 +312,13 @@
           <li class="catalog-paginator__item">
             <a class="catalog-paginator__link" href="#">5</a>
           </li>
-          <li class="catalog-paginator__item">
-            <a class="paginator-arrow-right">страницу вперед</a>
+          <li class="catalog-paginator__item catalog-paginator__item_arrow">
+            <a class="catalog-paginator__link-arrow" href="">
+              страницу вперед
+              <svg class="catalog-paginator__arrow-svg catalog-paginator__arrow-svg_right">
+                <polyline class="catalog-paginator__arrow catalog-paginator__arrow_right" points="0,0 6,6 6,7 0,12"></polyline>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>

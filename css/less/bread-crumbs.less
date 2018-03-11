@@ -2,6 +2,24 @@
 .bread-crumbs {
   .without_indentation;
   display: flex;
+  align-items: center;
   margin-top: auto;
   margin-bottom: 5px;
+  &__item {
+    &_arrows {
+      font-size: 0;
+    }
+  }
+  &__arrows {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 8px;
+    margin: 2px 5px 0;
+  }
+  &__arrow {
+    stroke-width: 2;
+    fill: none;
+    stroke: rgb(255, 255, 255);
+  }
 }

@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: @double-cell + @cell + @interval * 2;
+    max-width: 900px;
     font-weight: 500;
     line-height: 1.125;
     color: rgb(255, 255, 255);
@@ -112,7 +112,7 @@
       opacity: 0.4;
     }
   }
-  input[type="checkbox"] {
+  input[type="checkbox"] {  // получилась вложенность. Но, будто бы, не криминальная.
     &:focus + label::before {
       opacity: 1;
       outline: 1px solid rgb(77, 144, 254);
