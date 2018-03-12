@@ -1432,8 +1432,6 @@ input[id="slider_3"]:checked ~ .background-viewport {
 .bread-crumbs__arrows {
   display: inline-block;
   vertical-align: middle;
-  width: 10px;
-  height: 8px;
   margin: 2px 5px 0;
 }
 .bread-crumbs__arrow {
@@ -1613,10 +1611,6 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .catalog-paginator__item:last-of-type {
   margin-left: 16px;
-}
-.catalog-paginator__arrow-svg {
-  width: 7px;
-  height: 12px;
 }
 .catalog-paginator__arrow {
   stroke-width: 1;
