@@ -1,17 +1,15 @@
 //out: false
 .hits {
   padding: 0 @indent;
-  &__item {
-    &::before {
+  &__item .products__info::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 4px;
       left: 0;
       z-index: 10;
       display: block;
       width: 61px;
       height: 61px;
       background: url("../img/images/hit.svg") no-repeat;
-    }
   }
 }
