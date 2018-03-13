@@ -55,7 +55,7 @@ ul {
 .button {
   display: inline-block;
   vertical-align: middle;
-  height: 44px;
+  min-height: 44px;
   padding: 13px 24px;
   font-family: inherit;
   font-size: 18px;
@@ -394,6 +394,7 @@ ul {
 }
 .search__link {
   width: 33px;
+  margin-left: 0;
   padding: 0;
   font-size: 0;
   border-radius: 50%;
