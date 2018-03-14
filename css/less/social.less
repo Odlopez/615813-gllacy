@@ -13,55 +13,43 @@
     height: 38px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
-    border: 3px solid rgba(255, 255, 255, 0.5);
+    background-size: contain;
+    border: 3px solid rgba(255, 255, 255, 0.625);
     border-radius: 50%;
+    opacity: 0.8;
     &:hover,
     &:focus {
-      border: 3px solid rgba(255, 255, 255, 0.7);
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.7);
     }
     &:active {
+      opacity: 0.8;
+      border-color: rgba(255, 255, 255, 0.875);
       outline: none;
     }
     &_twitter {
       background-image: url("../img/images/twitter.svg");
-      &:hover,
-      &:focus {
-        background-image: url("../img/images/twitter-hover.svg");
-      }
-      &:active {
-        background-image: url("../img/images/twitter-active.svg");
-      }
+      // &:active {
+      //   background-image: url("../img/images/twitter-active.svg");
+      // }
     }
     &_instagram {
       background-image: url("../img/images/instagram.svg");
-      &:hover,
-      &:focus {
-        background-image: url("../img/images/instagram-hover.svg");
-      }
-      &:active {
-        background-image: url("../img/images/instagram-active.svg");
-      }
+      // &:active {
+      //   background-image: url("../img/images/instagram-active.svg");
+      // }
     }
     &_facebook {
       background-image: url("../img/images/facebook.svg");
-      &:hover,
-      &:focus {
-        background-image: url("../img/images/facebook-hover.svg");
-      }
-      &:active {
-        background-image: url("../img/images/facebook-active.svg");
-      }
+      // &:active {
+      //   background-image: url("../img/images/facebook-active.svg");
+      // }
     }
     &_vk {
       background-image: url("../img/images/vk.svg");
-      &:hover,
-      &:focus {
-        background-image: url("../img/images/vk-hover.svg");
-      }
-      &:active {
-        background-image: url("../img/images/vk-active.svg");
-      }
+      // &:active {
+      //   background-image: url("../img/images/vk-active.svg");
+      // }
     }
   }
 }

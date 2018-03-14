@@ -67,14 +67,14 @@
         <div class="basket__popup popup"> <!-- Скрытое наполнение корзины -->
           <ul class="basket__list">
             <li class="basket__item">
-              <button class="basket__delete-product button-close" type="button">удалить выбранный продукт</button>
+              <a class="basket__delete-product" href="#">удалить выбранный продукт</a>
               <span class="basket__image basket__image_first"></span>
               <p class="basket__product">Пломбир с&nbsp;апельсиновым джемом</p>
               <p class="basket__unit-price">1,5 кг х <span class="basket__price">200 руб.</span></p>
               <p class="basket__cost">300 руб.</p>
             </li>
             <li class="basket__item">
-              <button class="basket__delete-product button-close" type="button">удалить выбранный продукт</button>
+              <a class="basket__delete-product" href="#">удалить выбранный продукт</a>
               <span class="basket__image basket__image_second"></span>
               <p class="basket__product">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</p>
               <p class="basket__unit-price">1,5 кг х <span class="basket__price">300 руб.</span></p>
@@ -126,7 +126,7 @@
         <div class="filter">
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post" oninput="max.value=rangeMax.value">
             <!-- выпадающий список -->
-            <fieldset class="filter__fieldset filter__fieldset_sorting">
+            <fieldset class="filter__fieldset filter__fieldset-sorting">
                 <legend class="filter__legend">Сортировка:</legend>
               <select class="filter__sorting" name="sorting" id="sorting-list">
                 <option class="filter__sorting-option" value="popularity">по популярности</option>
@@ -136,7 +136,7 @@
               </select>
             </fieldset>
             <!-- ползунок -->
-            <fieldset class="filter__fieldset filter__fieldset_range">
+            <fieldset class="filter__fieldset filter__fieldset-range">
                 <legend class="filter__legend">
                   Цена:
                   <output class="range-output-min" name="min">100</output>
@@ -148,7 +148,7 @@
                 <label class="visuallyhidden" for="filter-range">Диапазон цены</label>
             </fieldset>
             <!-- радио-поле -->
-            <fieldset class="filter__fieldset filter__fieldset_fat">
+            <fieldset class="filter__fieldset filter__fieldset-fat">
               <legend class="filter__legend">Жирность:</legend>
               <input class="visuallyhidden" type="radio" name="fat" value="0%" id="no-fat">
               <label class="filter__label filter__label_fat" for="no-fat">0%</label>

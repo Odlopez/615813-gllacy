@@ -19,16 +19,16 @@
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 18px;
     border: none;
-    &_sorting {
+    &-sorting {
       flex-basis: 193px;
     }
-    &_range {
+    &-range {
       flex-basis: 220px;
       margin-left: auto;
       margin-right: auto;
       padding: 6px 20px;
     }
-    &_fat {
+    &-fat {
       flex-basis: 415px;
       padding: 7px 0px;
     }
@@ -36,9 +36,8 @@
   &__legend {
     position: absolute;
     margin-top: -32px;
-    font-size: 0.875em;
-    line-height: 1.143;
-
+    font-size: 14px;
+    line-height: 16px;
   }
   &__label {
     position: relative;
@@ -69,6 +68,14 @@
     &_fillers::before {
       content: url("../img/images/checkbox.svg");
     }
+  }
+  &__sorting {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
   }
   &__range {
     width: 100%;
