@@ -11,6 +11,7 @@
     color: rgb(255, 255, 255);
   }
   &__fieldset {
+    position: relative;
     min-height: 36px;
     margin-left: 0;
     margin-bottom: 38px;
@@ -21,12 +22,13 @@
     border: none;
     &-sorting {
       flex-basis: 193px;
+      padding-top: 8px;
     }
     &-range {
       flex-basis: 220px;
       margin-left: auto;
       margin-right: auto;
-      padding: 6px 20px;
+      padding: 8px 20px 4px;
     }
     &-fat {
       flex-basis: 415px;
@@ -70,12 +72,27 @@
     }
   }
   &__sorting {
+    width: 100%;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     color: rgb(255, 255, 255);
     background-color: transparent;
+    background-image: url("../img/images/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
     border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:hover,
+    &:focus {
+      color: rgb(50, 50, 50);
+      background-image: url("../img/images/select-arrow-hover.svg");
+    }
   }
   &__range {
     width: 100%;

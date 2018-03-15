@@ -57,7 +57,7 @@ ul {
   display: inline-block;
   vertical-align: middle;
   height: 44px;
-  padding: 13px 24px;
+  padding: 11px 24px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -378,6 +378,7 @@ ul {
   content: url("../img/images/search.svg");
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 17px;
 }
 .search__link:hover,
 .search__link:focus {
@@ -462,8 +463,6 @@ ul {
 .entry__btn {
   float: left;
   margin-right: 20px;
-  padding-top: 11px;
-  padding-bottom: 11px;
 }
 .entry__restoring,
 .entry__registration {
@@ -1034,7 +1033,8 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .contacts__btn {
   margin-top: 27px;
-  padding: 11px 27px 0;
+  padding-left: 27px;
+  padding-right: 27px;
   align-self: center;
 }
 .contacts__tel {
@@ -1271,6 +1271,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   color: #ffffff;
 }
 .filter__fieldset {
+  position: relative;
   min-height: 36px;
   margin-left: 0;
   margin-bottom: 38px;
@@ -1282,12 +1283,13 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .filter__fieldset-sorting {
   flex-basis: 193px;
+  padding-top: 8px;
 }
 .filter__fieldset-range {
   flex-basis: 220px;
   margin-left: auto;
   margin-right: auto;
-  padding: 6px 20px;
+  padding: 8px 20px 4px;
 }
 .filter__fieldset-fat {
   flex-basis: 415px;
@@ -1327,12 +1329,27 @@ input[id="slider_3"]:checked ~ .background-viewport {
   content: url("../img/images/checkbox.svg");
 }
 .filter__sorting {
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
   background-color: transparent;
+  background-image: url("../img/images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+.filter__sorting::-ms-expand {
+  display: none;
+}
+.filter__sorting:hover,
+.filter__sorting:focus {
+  color: #323232;
+  background-image: url("../img/images/select-arrow-hover.svg");
 }
 .filter__range {
   width: 100%;
