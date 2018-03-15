@@ -1,11 +1,17 @@
 //out: false
 .footer-links {
   .without_indentation;
+  margin-top: 14px;
+  &_left {
+    .footer-links__item {
+      padding-left: 25px;
+    }
+  }
   &__item {
     position: relative;
     margin-top: 2px;
     margin-bottom: 5px;
-    padding-left: 30px;
+    padding: 0 15px;
     font-size: 13px;
     line-height: 16px;
     &:hover,
@@ -20,7 +26,8 @@
       &::before {
         content: url("../img/images/heart.svg");
         position: absolute;
-        left: 8px;
+        margin-top: 2px;
+        margin-left: -22px;
       }
     }
   }

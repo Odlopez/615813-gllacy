@@ -5,12 +5,16 @@
   font-weight: 500;
   line-height: 18px;
   color: rgb(255, 255, 255);
-  text-decoration: underline solid rgba(255, 255, 255, 0.3);
+  .link-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
   &:hover,
   &:focus,
   &:active {
     color: rgb(255, 188, 158);
-    text-decoration: underline solid rgba(255, 188, 158, 0.3);
+    .link-border {
+      border-bottom-color: rgba(255, 188, 158, 0.3);
+    }
   }
   &:focus {
     outline: 1px solid rgb(77, 144, 254);
@@ -25,12 +29,16 @@
     font-weight: normal;
     line-height: 20px;
     color: rgb(50, 50, 50);
-    text-decoration: underline solid rgba(50, 50, 50, 0.3);
+    .link-border {
+      border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+    }
     &:hover,
     &:focus,
     &:active {
       color: rgb(232, 77, 55);
-      text-decoration: underline solid rgba(232, 77, 55, 0.3);
+      .link-border {
+        border-bottom-color: rgba(232, 77, 55, 0.3);
+      }
     }
   }
 }
