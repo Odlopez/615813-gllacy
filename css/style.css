@@ -1383,6 +1383,15 @@ input[id="slider_3"]:checked ~ .background-viewport {
   box-shadow: inset 0 2px 1px #696969;
   outline: none;
 }
+.filter__pseudo-range {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 176px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .filter input[type="radio"]:focus + label::before {
   opacity: 1;
   outline: 1px solid #4d90fe;
@@ -1406,6 +1415,45 @@ input[id="slider_3"]:checked ~ .background-viewport {
 .filter input[type="checkbox"]:disabled + label,
 .filter input[type="checkbox"]:disabled + label::before {
   opacity: 0.4;
+}
+.double-range {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+.double-range__lever {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.double-range__lever::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+}
+.double-range__lever:hover::before {
+  border-width: 9px;
+}
+.double-range__lever_left {
+  margin-left: 20px;
+}
+.double-range__lever_right {
+  margin-right: 53px;
+}
+.double-range__square {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #ffffff;
 }
 .catalog-paginator {
   display: flex;

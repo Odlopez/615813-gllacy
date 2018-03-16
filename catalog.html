@@ -102,10 +102,10 @@
             <a class="bread-crumbs__link link" href="#"><span class="link-border">Каталог</span></a>
           </li>
           <li class="bread-crumbs__item bread-crumbs__item_arrows">
-              <svg class="bread-crumbs__arrows" width="10" height="8">
-                <polyline class="bread-crumbs__arrow bread-crumbs__arrow_first" points="1,1 4,4 1,7"></polyline>
-                <polyline class="bread-crumbs__arrow bread-crumbs__arrow_second" points="5,1 8,4 5,7"></polyline>
-              </svg>
+            <svg class="bread-crumbs__arrows" width="10" height="8">
+              <polyline class="bread-crumbs__arrow bread-crumbs__arrow_first" points="1,1 4,4 1,7"></polyline>
+              <polyline class="bread-crumbs__arrow bread-crumbs__arrow_second" points="5,1 8,4 5,7"></polyline>
+            </svg>
             </li>
           <li class="bread-crumbs__item">Сливочное</li>
         </ul>
@@ -117,7 +117,6 @@
     </header>
     <!-- MAIN -->
     <main class="container">
-
       <h1 class="visuallyhidden">Магазин сладостей Gllacy Shop</h1>
       <!-- CATALOG -->
       <section class="catalog">
@@ -127,7 +126,7 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post" oninput="max.value=rangeMax.value">
             <!-- выпадающий список -->
             <fieldset class="filter__fieldset filter__fieldset-sorting">
-                <legend class="filter__legend">Сортировка:</legend>
+              <legend class="filter__legend">Сортировка:</legend>
               <select class="filter__sorting" name="sorting" id="sorting-list">
                 <option class="filter__sorting-option" value="popularity">по популярности</option>
                 <option class="filter__sorting-option" value="inexpensive-first">сначала недорогие</option>
@@ -137,15 +136,20 @@
             </fieldset>
             <!-- ползунок -->
             <fieldset class="filter__fieldset filter__fieldset-range">
-                <legend class="filter__legend">
-                  Цена:
-                  <output class="range-output-min" name="min">100</output>
-                  руб. -
-                  <output class="range-output-max" name="max">500</output>
-                  руб.
-                </legend>
-                <input class="filter__range" type="range" name="rangeMax" id="filter-range" min="0" max="800" step="10" value="500">
-                <label class="visuallyhidden" for="filter-range">Диапазон цены</label>
+              <legend class="filter__legend">
+                Цена:
+                <output class="range-output-min" name="min">100</output>
+                руб. -
+                <output class="range-output-max" name="max">500</output>
+                руб.
+              </legend>
+              <div class="filter__pseudo-range double-range">
+                <div class="double-range__lever double-range__lever_left"></div>
+                <div class="double-range__square"></div>
+                <div class="double-range__lever double-range__lever_right"></div>
+              </div>
+              <input class="filter__range visuallyhidden" type="range" name="rangeMax" id="filter-range" min="0" max="800" step="10" value="500">
+              <label class="visuallyhidden" for="filter-range">Диапазон цены</label>
             </fieldset>
             <!-- радио-поле -->
             <fieldset class="filter__fieldset filter__fieldset-fat">

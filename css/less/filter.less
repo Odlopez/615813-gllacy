@@ -121,6 +121,15 @@
       outline: none;
     }
   }
+  &__pseudo-range {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 176px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
   input[type="radio"] {  // получилась вложенность. Но, будто бы, не криминальная.
     &:focus + label::before {
       opacity: 1;
