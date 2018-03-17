@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family: Rouble;
-  src: url(../fonts/rouble.otf), url(../fonts/rouble.ttf);
+  src: url(../fonts/rouble.otf);
 }
 html {
   -moz-box-sizing: border-box;
@@ -160,7 +160,7 @@ img {
   max-width: 435px;
   min-height: 64px;
   margin-left: 10px;
-  list-style-type: none;
+  list-style: none;
 }
 .main-nav__item_catalog:hover > .main-menu {
   display: block;
@@ -259,7 +259,7 @@ img {
 .main-menu {
   width: 143px;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 .main-menu__title {
   width: 100%;
@@ -718,7 +718,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   max-width: 100%;
   justify-content: space-between;
   align-items: center;
-  list-style-type: none;
+  list-style: none;
 }
 .banners__item {
   flex-basis: 48.846%;
@@ -741,13 +741,13 @@ input[id="slider_3"]:checked ~ .background-viewport {
 .banner__info {
   width: 100%;
   margin: 0;
+  margin-bottom: 44px;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
 }
 .banner__link {
   align-self: flex-end;
-  margin-top: 44px;
   padding-top: 11px;
   padding-bottom: 11px;
 }
@@ -786,7 +786,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   margin-top: 0px;
   margin-bottom: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 .products__item {
   position: relative;
@@ -893,7 +893,9 @@ input[id="slider_3"]:checked ~ .background-viewport {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  list-style-type: none;
+  padding-left: 21px;
+  padding-right: 21px;
+  list-style: none;
 }
 .seo__item {
   position: relative;
@@ -902,33 +904,24 @@ input[id="slider_3"]:checked ~ .background-viewport {
   line-height: 22px;
   color: #323232;
 }
-.seo__item:nth-of-type(odd) {
-  padding-left: 20px;
-}
-.seo__item:nth-of-type(even) {
-  padding-right: 20px;
-}
 .seo__item::before {
   content: "";
   position: absolute;
   top: 0;
-  width: 49px;
-  height: 49px;
+  left: 0;
+  width: 50px;
+  height: 50px;
 }
 .seo__item_ice-cream::before {
-  left: 20px;
   background: url("../img/images/ice-cream.svg") no-repeat 50% 50%;
 }
 .seo__item_farmers::before {
-  left: 0;
   background: url("../img/images/cow.svg") no-repeat 50% 50%;
 }
 .seo__item_eco::before {
-  left: 20px;
   background: url("../img/images/leaf.svg") no-repeat 50% 50%;
 }
 .seo__item_thermopack::before {
-  left: 0;
   background: url("../img/images/therm.svg") no-repeat 50% 50%;
 }
 .seo__description {
@@ -1066,7 +1059,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   margin-right: auto;
   padding: 0;
   font-size: 0;
-  list-style-type: none;
+  list-style: none;
 }
 .social__link {
   display: block;
@@ -1105,7 +1098,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   padding: 0;
   margin: 0;
   margin-top: 14px;
-  list-style-type: none;
+  list-style: none;
 }
 .footer-links_left .footer-links__item {
   padding-left: 25px;
@@ -1154,7 +1147,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   padding: 0;
   font-size: 12px;
   line-height: 18px;
-  list-style-type: none;
+  list-style: none;
 }
 .academy-info__item {
   display: block;
@@ -1256,7 +1249,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 16px;
-  list-style-type: none;
+  list-style: none;
 }
 .bread-crumbs__item_arrows {
   font-size: 0;
@@ -1472,7 +1465,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   align-self: flex-end;
   margin-top: 0;
   margin-bottom: 33px;
-  list-style-type: none;
+  list-style: none;
 }
 .catalog-paginator__link {
   display: block;
