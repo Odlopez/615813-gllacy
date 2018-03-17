@@ -94,6 +94,9 @@
       background-image: url("../img/images/select-arrow-hover.svg");
     }
   }
+  &__sorting-option {
+    font: inherit;
+  }
   &__range {
     width: 100%;
   }
@@ -130,7 +133,7 @@
     height: 4px;
     background-color: rgba(255, 255, 255, 0.5);
   }
-  input[type="radio"] {  // получилась вложенность. Но, будто бы, не криминальная.
+  input[type="radio"] {
     &:focus + label::before {
       opacity: 1;
       outline: 1px solid rgb(77, 144, 254);
@@ -146,7 +149,7 @@
       opacity: 0.4;
     }
   }
-  input[type="checkbox"] {  // получилась вложенность. Но, будто бы, не криминальная.
+  input[type="checkbox"] {
     &:focus + label::before {
       opacity: 1;
       outline: 1px solid rgb(77, 144, 254);

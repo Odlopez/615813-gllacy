@@ -2,6 +2,7 @@
 .banner {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
   min-height: 229px;
   padding: 15px 20px 25px 19px;
@@ -13,6 +14,7 @@
     line-height: 41px;
   }
   &__info {
+    width: 100%; //для IE-11
     margin: 0;
     font-size: 18px;
     font-weight: 700;
@@ -20,7 +22,7 @@
   }
   &__link {
     align-self: flex-end;
-    margin-top: auto;
+    margin-top: 44px;
     padding-top: 11px;
     padding-bottom: 11px;
   }
