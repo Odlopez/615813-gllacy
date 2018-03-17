@@ -995,7 +995,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   padding: 0 19px;
 }
 .map {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 430px;
 }
@@ -1005,9 +1005,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   height: inherit;
 }
 .iframe {
-  position: absolute;
   width: 100%;
-  transform: translateY(-100%);
   z-index: 1;
 }
 .contacts {
