@@ -785,7 +785,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
 .products__item {
   position: relative;
   flex-basis: 23.27%;
-  padding-bottom: 36px;
+  padding-bottom: 38px;
 }
 .products__item:hover {
   z-index: 10;
@@ -797,7 +797,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   top: 0;
   left: -5%;
   width: 110%;
-  height: calc(100% + 38px);
+  height: calc(100% + 42px);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -811,7 +811,6 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .products__image {
   height: auto;
-  margin-top: 4px;
   border-radius: 50%;
 }
 .products__cost {
@@ -839,9 +838,8 @@ input[id="slider_3"]:checked ~ .background-viewport {
   position: relative;
   z-index: 100;
   left: 50%;
-  margin-top: 16px;
-  padding-left: 13px;
-  padding-right: 13px;
+  margin-top: 12px;
+  padding: 9px 16px 11px;
   transform: translateX(-50%);
 }
 .rouble {
@@ -1218,7 +1216,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .catalog__title {
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 52px;
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
