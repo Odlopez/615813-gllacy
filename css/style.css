@@ -1271,7 +1271,7 @@ input[id="slider_3"]:checked ~ .background-viewport {
   margin-left: 0;
   margin-bottom: 38px;
   margin-right: 0;
-  padding: 7px 15px;
+  padding: 9px 15px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   border: none;
@@ -1288,7 +1288,8 @@ input[id="slider_3"]:checked ~ .background-viewport {
 }
 .filter__fieldset-fat {
   width: 415px;
-  padding: 7px 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .filter__legend {
   position: absolute;
@@ -1305,19 +1306,18 @@ input[id="slider_3"]:checked ~ .background-viewport {
   cursor: pointer;
 }
 .filter__label_fillers {
-  margin-left: 50px;
+  margin-right: 17px;
+  margin-left: 32px;
 }
-.filter__label_fillers:first-of-type {
-  margin-left: 34px;
-}
-.filter__label_fillers:nth-of-type(2) {
-  margin-left: 47px;
+.filter__label_fillers:last-of-type {
+  margin-right: 5px;
 }
 .filter__label_fat::before,
 .filter__label_fillers::before {
   content: "";
   position: absolute;
-  left: -35px;
+  top: -1px;
+  left: -32px;
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.8;
