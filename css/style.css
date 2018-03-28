@@ -673,11 +673,11 @@ img {
 .shop-window__image {
   position: absolute;
   top: 0;
-  left: 50%;
+  right: 50%;
   z-index: -10;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
 }
 .shop-window__desc {
   display: block;
