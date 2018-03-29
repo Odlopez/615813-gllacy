@@ -1,0 +1,35 @@
+//out: false
+.distribution {
+  flex-basis: @double-cell;
+  min-height: 210px;
+  padding: 5px;
+  background-image: repeating-linear-gradient(135deg, rgb(254, 158, 144) 0px,  rgb(254, 158, 144) 6px, rgb(255, 255, 255) 6px,
+   rgb(255, 255, 255) 12px, rgb(146, 205, 255) 12px, rgb(146, 205, 255) 18px, rgb(255, 255, 255) 18px,  rgb(255, 255, 255) 24px);
+  background-size: cover;
+  border-radius: 14px;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: inherit;
+    padding: 30px 20px 15px;
+    background-color: rgb(248, 247, 244);
+    border-radius: 14px;
+  }
+  &__info {
+    flex-basis: 100%;
+    margin-bottom: 35px;
+    line-height: 22px;
+    color: rgb(90, 90, 90);
+  }
+  &__form {
+    display: flex;
+    width: 100%;
+  }
+  &__email {
+    flex-grow: 10;
+  }
+  &__submit {
+    margin-left: 11px;
+    padding: 0 19px;
+  }
+}

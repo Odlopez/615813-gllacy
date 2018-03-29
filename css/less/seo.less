@@ -1,0 +1,59 @@
+//out: false
+.seo {
+  padding: 0 @indent;
+  &__wrap {
+    padding: 24px 0 26px;
+    background: rgb(234, 221, 193) url("../img/images/wafer.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 13px;
+  }
+  &__title {
+    margin: 0 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.08px;
+    color: rgb(50, 50, 50);
+  }
+  &__list {
+    .without_indentation;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 21px;
+    padding-right: 21px;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    flex-basis: @double-cell;
+    margin-top: 10px;
+    line-height: 22px;
+    color: rgb(50, 50, 50);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+    }
+    &_ice-cream::before {
+      background: url("../img/images/ice-cream.svg") no-repeat 50% 50%;
+    }
+    &_farmers::before {
+      background: url("../img/images/cow.svg") no-repeat 50% 50%;
+    }
+    &_eco::before {
+      background: url("../img/images/leaf.svg") no-repeat 50% 50%;
+    }
+    &_thermopack::before {
+      background: url("../img/images/therm.svg") no-repeat 50% 50%;
+    }
+  }
+  &__description {
+    margin: 13px 0 0;
+    padding-left: 56px;
+  }
+}
